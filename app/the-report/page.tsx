@@ -66,8 +66,8 @@ export default function TheReportPage() {
               </PullQuote>
             </div>
             <Image
-              src="/images/report-scan.png"
-              alt="Line-art illustration of a report document with usage charts"
+              src="/images/concept-dashboard-analytics.jpg"
+              alt="Illustration of a solar energy dashboard with usage charts, a battery gauge, and a solar-powered plug icon"
               width={560}
               height={420}
               className="w-full border border-rule"
