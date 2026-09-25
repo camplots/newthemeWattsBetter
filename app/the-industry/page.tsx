@@ -123,6 +123,14 @@ export default function TheIndustryPage() {
                   As at 30 June 2026, it had inspected 3,425 — 718 of them in Queensland.
                 </p>
 
+                <Image
+                  src="/images/industry-switchboard.png"
+                  alt="Illustration of a switchboard with labelled circuits and compliance data readouts"
+                  width={1040}
+                  height={480}
+                  className="mt-8 w-full border border-rule"
+                />
+
                 <div className="mt-8">
                   <ComparisonBars
                     items={[

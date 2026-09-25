@@ -36,8 +36,8 @@ export default function HowWeArePaidPage() {
         <Section className="!py-0">
           <div className="grid gap-14 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-24">
             <Image
-              src="/images/paid-ledger.png"
-              alt="Line-art illustration of a ledger with a fee split into two portions"
+              src="/images/concept-fee-ledger.png"
+              alt="Illustration of a ledger with a fee split into two portions"
               width={520}
               height={520}
               className="h-fit w-full border border-rule"

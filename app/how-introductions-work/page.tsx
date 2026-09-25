@@ -91,8 +91,8 @@ export default function HowIntroductionsWorkPage() {
 
             <div className="flex flex-col gap-6">
               <Image
-                src="/images/introductions-path.png"
-                alt="Diagram of many paths converging into a single considered introduction"
+                src="/images/concept-introduction-funnel.png"
+                alt="Illustration of many paths converging into a single considered introduction"
                 width={560}
                 height={420}
                 className="w-full border border-rule"
