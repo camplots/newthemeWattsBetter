@@ -308,9 +308,17 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "RenewEconomy: 2025 Australian battery market mainstream adoption analysis",
-          "Clean Energy Regulator: Cheaper Home Batteries Program — program design and capacity caps",
-          "Watts Better Analysis: Automated energy profile analysis and investment modelling report"
+          {
+            "label": "RenewEconomy: 2025 Australian battery market mainstream adoption analysis",
+            "href": "https://reneweconomy.com.au/"
+          },
+          {
+            "label": "Clean Energy Regulator: Cheaper Home Batteries Program — program design and capacity caps",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Watts Better Analysis: Automated energy profile analysis and investment modelling report"
+          }
         ]
       },
       {
@@ -545,9 +553,18 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Energy Regulator — Energy Made Easy (independent plan and feed-in tariff comparison)",
-          "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
-          "Australian Energy Market Commission — retail energy competition and pricing reviews"
+          {
+            "label": "Australian Energy Regulator — Energy Made Easy (independent plan and feed-in tariff comparison)",
+            "href": "https://www.energymadeeasy.gov.au/"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "Australian Energy Market Commission — retail energy competition and pricing reviews",
+            "href": "https://www.aemc.gov.au/"
+          }
         ]
       },
       {
@@ -1026,10 +1043,21 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government Solar Guide — choosing a solar retailer and installer",
-          "Solar Accreditation Australia — accreditation status check",
-          "New Energy Tech Consumer Code — approved sellers",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "New Energy Tech Consumer Code — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -1558,11 +1586,25 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government Solar Guide",
-          "Australian Government Solar Guide — choosing a solar retailer and installer",
-          "Australian Competition and Consumer Commission — solar panels and home batteries",
-          "Solar Accreditation Australia — accreditation status check",
-          "New Energy Tech Consumer Code — approved sellers"
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "Australian Competition and Consumer Commission — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "New Energy Tech Consumer Code — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          }
         ]
       },
       {
@@ -2358,14 +2400,38 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Amber — building the bring-your-own-battery energy future",
-          "Flow Power — Battery Happy Hour",
-          "Flow Power — battery export guides",
-          "Amber — SmartShift Compatibility Checker",
-          "Amber — solar and battery",
-          "Flow Power — batteries with Flow Power",
-          "Clean Energy Council — approved batteries",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "Amber — building the bring-your-own-battery energy future",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Flow Power — Battery Happy Hour",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Flow Power — battery export guides",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Amber — SmartShift Compatibility Checker",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Amber — solar and battery",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Flow Power — batteries with Flow Power",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Clean Energy Council — approved batteries",
+            "href": "https://www.cleanenergycouncil.org.au/"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -2543,10 +2609,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "DCCEEW",
-          "Clean Energy Regulator — Solar batteries",
-          "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "DCCEEW",
+            "href": "https://www.dcceew.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -3391,10 +3469,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "GoodWe ESA Australian user manual",
-          "GoodWe Australia and New Zealand warranty documentation",
-          "ACCC — solar panels and home batteries",
-          "GoodWe Australia warranty library"
+          {
+            "label": "GoodWe ESA Australian user manual",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "GoodWe Australia and New Zealand warranty documentation",
+            "href": "https://www.goodwe.com.au/warranty"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "GoodWe Australia warranty library",
+            "href": "https://www.goodwe.com.au/warranty"
+          }
         ]
       },
       {
@@ -4183,12 +4273,29 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "International Energy Agency — Solar PV Global Supply Chains",
-          "Wood Mackenzie — Global solar PV module manufacturer ranking",
-          "RETC — 2026 PV Module Index",
-          "Hanwha Q CELLS patent complaint; LONGi and JinkoSolar global settlement",
-          "Sinovoltaics — 2026 financial stability ranking",
-          "Clean Energy Regulator — rooftop solar installers and designers"
+          {
+            "label": "International Energy Agency — Solar PV Global Supply Chains",
+            "href": "https://www.iea.org/reports/solar-pv-global-supply-chains"
+          },
+          {
+            "label": "Wood Mackenzie — Global solar PV module manufacturer ranking",
+            "href": "https://www.woodmac.com/press-releases/longi-green-energy-tops-wood-mackenzies-global-solar-pv-module-manufacturer-ranking-2026"
+          },
+          {
+            "label": "RETC — 2026 PV Module Index",
+            "href": "https://retc-ca.com/pvmi"
+          },
+          {
+            "label": "Hanwha Q CELLS patent complaint; LONGi and JinkoSolar global settlement"
+          },
+          {
+            "label": "Sinovoltaics — 2026 financial stability ranking",
+            "href": "https://sinovoltaics.com/reports/2026-solar-financial-stability-ranking-of-pv-modules-inverters-energy-storage-manufacturers-edition-1"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          }
         ]
       },
       {
@@ -4960,15 +5067,42 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "GoodWe Australia — warranty library",
-          "Sigenergy — SigenStor; Sigenergy — SigenStor Neo",
-          "DCCEEW — Cheaper Home Batteries Program",
-          "GoodWe Lynx F G2 Series",
-          "GoodWe Lynx U G3 Series",
-          "Sigenergy — SigenStor",
-          "Sigenergy — SigenStor Neo",
-          "Sigenergy SigenStor user manual",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "GoodWe Australia — warranty library",
+            "href": "https://www.goodwe.com.au/warranty"
+          },
+          {
+            "label": "Sigenergy — SigenStor; Sigenergy — SigenStor Neo",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "GoodWe Lynx F G2 Series",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "GoodWe Lynx U G3 Series",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "Sigenergy — SigenStor",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Sigenergy — SigenStor Neo",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Sigenergy SigenStor user manual",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -5851,13 +5985,34 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government — sizing your solar system",
-          "Australian Government — vehicle-to-everything opportunities",
-          "Energex — bidirectional EV charging",
-          "Energex — vehicle-to-grid EV connections",
-          "Energy.gov.au — smarter EV charging",
-          "Sigenergy — SigenStor",
-          "Australian Government — Cheaper Home Batteries Program"
+          {
+            "label": "Australian Government — sizing your solar system",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Australian Government — vehicle-to-everything opportunities",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Energex — bidirectional EV charging",
+            "href": "https://www.energex.com.au/"
+          },
+          {
+            "label": "Energex — vehicle-to-grid EV connections",
+            "href": "https://www.energex.com.au/"
+          },
+          {
+            "label": "Energy.gov.au — smarter EV charging",
+            "href": "https://www.energy.gov.au/"
+          },
+          {
+            "label": "Sigenergy — SigenStor",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Australian Government — Cheaper Home Batteries Program",
+            "href": "https://www.energy.gov.au/news/discounted-batteries-households-through-cheaper-home-batteries-program"
+          }
         ]
       },
       {
@@ -6465,13 +6620,34 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government — Cheaper Home Batteries Program",
-          "DCCEEW — STC factor schedule",
-          "Clean Energy Regulator — rooftop solar installers and designers",
-          "DCCEEW — Cheaper Home Batteries Program",
-          "Clean Energy Regulator — Solar batteries",
-          "Queensland Government — Supercharged Solar for Renters",
-          "Queensland Government — Solar Bonus Scheme"
+          {
+            "label": "Australian Government — Cheaper Home Batteries Program",
+            "href": "https://www.energy.gov.au/news/discounted-batteries-households-through-cheaper-home-batteries-program"
+          },
+          {
+            "label": "DCCEEW — STC factor schedule",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          },
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Queensland Government — Supercharged Solar for Renters",
+            "href": "https://www.qld.gov.au/"
+          },
+          {
+            "label": "Queensland Government — Solar Bonus Scheme",
+            "href": "https://www.qld.gov.au/"
+          }
         ]
       },
       {
@@ -6836,11 +7012,24 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Solar Accreditation Australia — accreditation",
-          "Australian Government Solar Guide",
-          "Solar Accreditation Australia — accreditation status check",
-          "NETCC — approved sellers",
-          "Clean Energy Regulator — solar battery inspection results"
+          {
+            "label": "Solar Accreditation Australia — accreditation"
+          },
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "NETCC — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          },
+          {
+            "label": "Clean Energy Regulator — solar battery inspection results",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/small-scale-renewable-energy-scheme/small-scale-renewable-energy-systems/small-scale-renewable-energy-system-inspections/solar-battery-inspection-results-report"
+          }
         ]
       },
       {
@@ -7671,13 +7860,33 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Business Queensland — electrical licences",
-          "Clean Energy Regulator — rooftop solar installers and designers",
-          "Business Queensland — electrical contractor safety duties",
-          "Solar Accreditation Australia — accreditation status check",
-          "ABN Lookup",
-          "ASIC Published Notices",
-          "Australian Government Solar Guide"
+          {
+            "label": "Business Queensland — electrical licences",
+            "href": "https://www.business.qld.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          },
+          {
+            "label": "Business Queensland — electrical contractor safety duties",
+            "href": "https://www.business.qld.gov.au/"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "ABN Lookup",
+            "href": "https://abr.business.gov.au/"
+          },
+          {
+            "label": "ASIC Published Notices",
+            "href": "https://publishednotices.asic.gov.au/"
+          },
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          }
         ]
       },
       {
@@ -7911,9 +8120,17 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Clean Energy Regulator",
-          "Clean Energy Regulator — Solar batteries",
-          "Solar Accreditation Australia — accreditation status check"
+          {
+            "label": "Clean Energy Regulator",
+            "href": "https://cer.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          }
         ]
       },
       {

@@ -20,7 +20,7 @@ export type ArticleBlock =
   | { type: 'callout'; label: string; text: string; tone?: 'copper' | 'oxblood' | string }
   | { type: 'twocol'; leftTitle: string; leftItems: string[]; rightTitle: string; rightItems: string[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
-  | { type: 'sources'; items: string[] }
+  | { type: 'sources'; items: ({ label: string; href?: string } | string)[] }
   | { type: 'findings'; items: { title: string; text: string }[] }
   | { type: 'levers'; items: { title: string; text: string }[] }
   | {
@@ -249,11 +249,26 @@ export function ArticleBlocks({ blocks }: { blocks: ArticleBlock[] }) {
               <div key={i} className="border-t border-rule pt-6">
                 <Eyebrow>Sources</Eyebrow>
                 <ul className="mt-3 flex flex-col gap-1.5">
-                  {block.items.map((s, si) => (
-                    <li key={si} className="text-[13px] leading-relaxed text-ink-soft">
-                      {s}
-                    </li>
-                  ))}
+                  {block.items.map((item, si) => {
+                    const label = typeof item === 'string' ? item : item.label
+                    const href = typeof item === 'string' ? undefined : item.href
+                    return (
+                      <li key={si} className="text-[13px] leading-relaxed text-ink-soft">
+                        {href ? (
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline decoration-rule underline-offset-2 transition-colors hover:text-copper hover:decoration-copper"
+                          >
+                            {label}
+                          </a>
+                        ) : (
+                          label
+                        )}
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
             )
