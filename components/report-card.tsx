@@ -15,7 +15,7 @@ export function ReportCard({
 }) {
   return (
     <div
-      className={`relative w-full max-w-sm border border-ink/15 bg-card p-6 shadow-[8px_8px_0_0_var(--ink-deep)] md:p-8 ${
+      className={`relative w-full max-w-sm rounded-2xl border border-rule bg-card p-6 shadow-lg md:p-8 ${
         tilt === 'right' ? 'rotate-1' : '-rotate-1'
       }`}
     >

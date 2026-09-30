@@ -14,7 +14,7 @@ export function Callout({
   return (
     <aside
       className={cn(
-        'relative border-l-[3px] bg-paper-deep p-6 md:p-7',
+        'relative rounded-xl border-l-2 bg-paper-deep p-6 md:p-7',
         tone === 'copper' ? 'border-copper' : 'border-oxblood',
         className
       )}
