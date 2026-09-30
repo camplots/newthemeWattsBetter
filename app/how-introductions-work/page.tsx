@@ -211,7 +211,7 @@ export default function HowIntroductionsWorkPage() {
         </Section>
 
         <Section className="text-center">
-          <Eyebrow className="justify-center">Final action</Eyebrow>
+          <Eyebrow className="justify-center">Next step</Eyebrow>
           <h2 className="mx-auto mt-5 max-w-xl font-display text-3xl leading-tight text-ink md:text-4xl">
             If you would like to speak with an installer, request an introduction and choose what
             information you would like us to share.

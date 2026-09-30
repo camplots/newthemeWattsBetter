@@ -119,7 +119,7 @@ export default function AboutUs() {
           </div>
         </section>
 
-        <Marquee text="Independent, always." />
+        <Marquee text="Start with your electricity bill." />
 
         {/* How we work */}
         <section style={{ backgroundColor: NAVY }} className="border-b-[3px] border-black">

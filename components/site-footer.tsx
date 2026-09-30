@@ -33,7 +33,7 @@ export function SiteFooter() {
           ))}
         </div>
         <p className="mt-10 text-sm font-semibold">
-          © {new Date().getFullYear()} Watts Better. Independent, always.
+          © {new Date().getFullYear()} Watts Better.
         </p>
       </div>
     </footer>

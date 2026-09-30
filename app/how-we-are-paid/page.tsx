@@ -1,19 +1,21 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { Section } from '@/components/section'
 import { Eyebrow } from '@/components/eyebrow'
 import { Callout } from '@/components/callout'
-import { PullQuote } from '@/components/pull-quote'
 import { FaqList } from '@/components/faq-list'
 import { RelatedReading } from '@/components/related-reading'
-import { ReportList, ReportP, ReportTwoCol } from '@/components/report-prose'
+import { ReportList, ReportP } from '@/components/report-prose'
 
 export const metadata: Metadata = {
-  title: "How We Are Paid — Watts Better",
-  description: 'Who pays Watts Better, and what for.',
+  title: 'How we are paid — Watts Better',
+  description:
+    'You do not pay us for the assessment, report or conversation. If you proceed with an installer we introduced, the installer pays us a fee.',
 }
 
 export default function HowWeArePaidPage() {
@@ -24,13 +26,8 @@ export default function HowWeArePaidPage() {
         <PageHero
           eyebrow="How we are paid"
           title="How we are paid"
-          intro="You do not pay us for the assessment, the report or the conversation. If you ask us to introduce you to an installer and proceed with that installer, the installer pays us a fee. Part of that fee funds your independent inspection; we keep the rest for the advice and coordination."
-        >
-          <Callout label="Your details" tone="copper" className="mt-8 max-w-2xl">
-            We do not share your information with an installer unless you ask us to introduce
-            you to one.
-          </Callout>
-        </PageHero>
+          intro="We want you to understand how the service works before you decide whether to use it."
+        />
 
         <Section className="!py-0">
           <div className="grid gap-14 py-16 md:grid-cols-[0.9fr_1.1fr] md:py-24">
@@ -43,186 +40,164 @@ export default function HowWeArePaidPage() {
             />
             <div className="flex flex-col gap-10">
               <div>
-                <Eyebrow>Who pays us</Eyebrow>
-                <ReportP>
-                  You don&apos;t. Not for the assessment, not for your report, not for the
-                  consultation, not for the photo capture.
-                </ReportP>
-                <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
-                  The installer does — but only if you ask for an introduction, and only if you
-                  proceed with that installer.
+                <Eyebrow>What you pay</Eyebrow>
+                <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+                  What you pay
+                </h2>
+                <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
+                  You do not pay us for:
                 </p>
-                <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
-                  If you never request an introduction, nobody pays anything. You keep the report
-                  and use it however you like.
-                </p>
+                <div className="mt-4">
+                  <ReportList
+                    items={[
+                      'the assessment',
+                      'the report',
+                      'the conversation',
+                      'the photo capture',
+                      'the eligible inspection after installation',
+                    ]}
+                  />
+                </div>
               </div>
               <div>
-                <Eyebrow tone="oxblood">What for</Eyebrow>
-                <div className="mt-5 flex flex-col gap-5">
-                  <div>
-                    <h3 className="font-display text-lg text-ink">Your independent inspection.</h3>
-                    <p className="mt-1.5 text-[15px] leading-relaxed text-ink-soft">
-                      A licensed inspector assesses the finished installation and you receive the
-                      report. A genuine third-party cost, covered from the fee.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg text-ink">Your advice.</h3>
-                    <p className="mt-1.5 text-[15px] leading-relaxed text-ink-soft">
-                      The assessment, the modelled report, the consultation, and the
-                      coordination.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg text-ink">Your protection.</h3>
-                    <p className="mt-1.5 text-[15px] leading-relaxed text-ink-soft">
-                      We introduce one installer, they know an inspection of their work will
-                      follow, and we&apos;re the ones arranging it.
-                    </p>
-                  </div>
-                </div>
+                <Eyebrow tone="oxblood">When the installer pays us</Eyebrow>
+                <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+                  When the installer pays us
+                </h2>
+                <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
+                  If you ask us to introduce you to an installer and then proceed with that
+                  installer, the installer pays us a fee.
+                </p>
+                <Callout label="If you do not proceed" tone="copper" className="mt-6">
+                  If you do not proceed, we do not receive that fee.
+                </Callout>
               </div>
             </div>
           </div>
         </Section>
 
         <Section bg="paper-dark">
-          <Eyebrow>Why the installer pays, not you</Eyebrow>
-          <div className="mt-6 max-w-2xl">
-            <ReportP>
-              An installer&apos;s hardest problem isn&apos;t price. It&apos;s finding a customer
-              who already knows what they need.
-            </ReportP>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-              We solve that before we make an introduction — through the assessment, the report,
-              the consultation and the photo capture. A well-briefed customer is worth real money
-              to a good installer: fewer wasted visits, fewer design revisions, fewer surprises.
-            </p>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-              So they pay for the introduction out of the budget they&apos;d otherwise spend
-              finding work. It is not an added line on your invoice.
+          <Eyebrow>What the fee covers</Eyebrow>
+          <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+            What the fee covers
+          </h2>
+          <div className="mt-6 flex max-w-2xl flex-col gap-4">
+            <ReportP>Part of the fee covers the independent inspection and report.</ReportP>
+            <p className="text-[15px] leading-relaxed text-ink-soft">
+              The rest covers the assessment, report, conversation, photo capture and work
+              involved in arranging the introduction.
             </p>
           </div>
         </Section>
 
         <Section>
-          <Eyebrow>What we don&apos;t get paid for</Eyebrow>
-          <div className="mt-8 max-w-2xl">
+          <Eyebrow>What you decide</Eyebrow>
+          <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+            What you decide
+          </h2>
+          <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">You decide:</p>
+          <div className="mt-4 max-w-2xl">
             <ReportList
               items={[
-                'No manufacturer or distributor commissions. No brand pays us to appear in your report.',
-                "No margin on hardware. We don't sell panels, inverters or batteries.",
-                "No selling of your details. We don't run a lead network.",
-                "No payment per quote. We'd rather you understood the options than collected proposals.",
+                'whether to request an introduction',
+                'when to request it',
+                'what information we share',
+                'whether to speak with the installer',
+                'whether to accept the quote',
+                'whether to proceed with the work',
               ]}
             />
           </div>
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
+            Requesting an introduction does not commit you to a quote, purchase or installation.
+          </p>
         </Section>
 
         <Section bg="paper-dark">
-          <Eyebrow>A fair question</Eyebrow>
-          <h2 className="mt-5 max-w-3xl font-display text-2xl leading-snug text-ink md:text-3xl">
-            Can you be independent if the installer pays you?
+          <Eyebrow>What we do not get paid for</Eyebrow>
+          <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+            What we do not get paid for
           </h2>
-          <div className="mt-6 max-w-2xl">
-            <PullQuote>
-              If you do not proceed with an installation, we do not get paid. That incentive
-              exists, and we would rather be upfront about it than pretend otherwise.
-            </PullQuote>
-          </div>
-          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-            Here&apos;s what we control:
-          </p>
-          <div className="mt-6 max-w-2xl">
+          <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">We do not receive:</p>
+          <div className="mt-4 max-w-2xl">
             <ReportList
               items={[
-                "The fee doesn't change with the size of your system. We earn the same set amount for each system size regardless of which installer is introduced.",
-                "We don't take a second introduction. We can't shop you around for a better fee.",
-                'We take nothing from manufacturers or financiers.',
-                "The inspector isn't chosen by the installer, and isn't told who referred you.",
-                "We'll tell you not to go ahead — including that a battery isn't the right first move. That costs us money, and we'd rather say it than have you find out later.",
+                'manufacturer commissions',
+                'distributor commissions',
+                'a margin on panels, inverters or batteries',
+                'payment for sending your details to several installers',
+                'payment for each quote you request',
               ]}
             />
           </div>
+          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
+            We do not sell your details to an installer network.
+          </p>
         </Section>
 
         <Section>
-          <Eyebrow>Why only one introduction?</Eyebrow>
-          <div className="mt-6 max-w-2xl">
+          <Eyebrow>One introduction</Eyebrow>
+          <h2 className="mt-5 font-display text-2xl leading-tight text-ink md:text-3xl">
+            Why we introduce one installer
+          </h2>
+          <div className="mt-6 flex max-w-2xl flex-col gap-4">
             <ReportP>
-              Most comparison services hand your details to several installers and let them
-              compete on price. You get three quotes, and the job of working out which one is
-              real.
+              We do not send your details to several installers. If you ask for an introduction,
+              we make one introduction to an installer we are prepared to recommend.
             </ReportP>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-              We do the opposite. One installer, chosen against our criteria — licensing, who
-              actually performs the work, how customers are supported afterwards, and whether
-              they&apos;ll cooperate with an independent inspection of their own work.
+            <p className="text-[15px] leading-relaxed text-ink-soft">
+              You can still use your own installer or seek other quotes.
             </p>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-              The trade-off, stated plainly: you don&apos;t get competing quotes. What you get
-              instead is a benchmark — your report tells you what your home needs, what it should
-              cost, and what to ask. You&apos;re checking one quote against something
-              independent, not against other quotes.
-            </p>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-              You can always walk away, use your own installer, or get other quotes. Requesting
-              an introduction commits you to nothing.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <ReportTwoCol
-              leftTitle="No cost to you"
-              leftItems={[
-                'The assessment and report — no cost to you',
-                'The consultation and photo capture — no cost to you',
-                'A quote from an introduced installer — no cost to you',
-                'Your independent inspection — funded from that fee, no cost to you',
-              ]}
-              rightTitle="Installer pays"
-              rightItems={['You proceed with the installation — the installer pays the introducer fee']}
-            />
           </div>
         </Section>
 
         <Section bg="paper-dark">
           <FaqList
-            title="Frequently asked questions"
+            title="Common questions"
             items={[
-              { q: 'How much is the introducer fee?', a: 'Between $600 and $800 depending on system.' },
               {
-                q: 'Will I pay more because of it?',
-                a: "It comes out of the installer's margin, not your invoice — their cost of acquiring a briefed customer, replacing marketing spend they'd otherwise carry.",
+                q: 'Will I pay more because the installer pays you?',
+                a: "We do not charge you a separate fee. You should still review the installer's quote carefully and compare it with other quotes if you wish.",
               },
-              { q: "Do you get paid if I don't proceed?", a: 'No.' },
+              {
+                q: 'Do you get paid if I do not proceed?',
+                a: 'No. We receive the fee only if you proceed with the installer we introduced.',
+              },
               {
                 q: 'Can I use my own installer?',
-                a: 'Yes. The report is yours, and nothing requires you to request an introduction.',
+                a: 'Yes. You can use the report with any installer you choose.',
               },
               {
-                q: 'What happens if you tell me not to install?',
-                a: "Nothing. You keep the report and we're paid nothing. That's the point.",
+                q: 'What happens if you advise me not to install?',
+                a: 'You keep your report. You can decide to wait, make changes to your home or seek another opinion.',
               },
               {
-                q: 'Does the inspector know which installer you introduced?',
-                a: "No. We pay them a fixed fee, and they don't know who installed the system prior.",
+                q: 'Does the installer choose the inspector?',
+                a: 'No. The inspection is arranged independently.',
+              },
+              {
+                q: 'Do you share my information without asking?',
+                a: 'No. We only share your information with an installer if you request an introduction and approve what is shared.',
+              },
+              {
+                q: 'How much is the installer fee?',
+                a: 'Between $600 and $800, depending on the system. The installer pays this fee to Watts Better.',
               },
             ]}
           />
         </Section>
 
-        <Section>
-          <Eyebrow>In short</Eyebrow>
-          <PullQuote>
-            You can know who is paying whom, and what they get for it.
-          </PullQuote>
-          <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-            You pay us nothing to understand your options. If you choose to act on that, an
-            installer pays us — and part of what they pay covers an independent check of their
-            own work.
-          </p>
+        <Section className="text-center">
+          <h2 className="mx-auto max-w-xl font-display text-3xl leading-tight text-ink md:text-4xl">
+            Start the assessment
+          </h2>
+          <Link
+            href="/calculator"
+            className="mt-8 inline-flex items-center gap-3 border border-ink bg-ink px-7 py-4 font-mono text-xs uppercase tracking-[0.14em] text-paper transition-colors hover:bg-ink/85"
+          >
+            Start with your electricity bill
+            <ArrowRight className="size-4" />
+          </Link>
         </Section>
 
         <RelatedReading keys={['how-introductions-work', 'about-us', 'installation-inspections']} />
