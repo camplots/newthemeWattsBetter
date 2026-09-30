@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 
 const TONES = {
-  yellow: '#F0D98C',
-  lavender: '#D9D2EE',
-  mint: '#B9E3C9',
-  peach: '#F3C89A',
+  yellow: '#F5F65A',
+  lavender: '#D8C4F7',
+  mint: '#8AEFC1',
+  peach: '#FFC98B',
 } as const
 
 export function PageHero({

@@ -66,22 +66,22 @@
 :root {
   color-scheme: light;
 
-  /* Brand — warm, calm palette */
-  --paper: #fbf5ea;
-  --paper-dark: #f1e6d2;
-  --paper-deep: #e8d9bc;
-  --ink: #2e2150;
-  --ink-soft: #6f6390;
-  --copper: #ef5da0;
-  --copper-deep: #b23e79;
-  --copper-soft: #f6c7de;
-  --copper-mist: #fbeaf2;
-  --oxblood: #1e1740;
-  --oxblood-deep: #1e1740;
-  --oxblood-soft: #8880b8;
-  --oxblood-mist: #e7e2f3;
-  --ink-deep: #1e1740;
-  --rule: #d8c7a6;
+  /* Brand — concept neo-brutalist palette */
+  --paper: #ffffff;
+  --paper-dark: #f2ecfb;
+  --paper-deep: #e6dbf7;
+  --ink: #111111;
+  --ink-soft: #444444;
+  --copper: #f45fa0;
+  --copper-deep: #c63f7e;
+  --copper-soft: #fbbfd9;
+  --copper-mist: #fdeaf2;
+  --oxblood: #151338;
+  --oxblood-deep: #151338;
+  --oxblood-soft: #4b4780;
+  --oxblood-mist: #e3e1f0;
+  --ink-deep: #151338;
+  --rule: #111111;
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -101,13 +101,12 @@
   --border: var(--rule);
   --input: var(--rule);
   --ring: var(--copper);
-  /* Chart meaning stays fixed: orange = solar, purple = battery, blue = grid bought, green = grid sold, red = warning/high-cost only */
-  --chart-1: oklch(0.72 0.16 55); /* solar — orange */
-  --chart-2: oklch(0.52 0.16 300); /* battery — purple */
-  --chart-3: oklch(0.6 0.14 250); /* grid bought — blue */
-  --chart-4: oklch(0.65 0.14 150); /* grid sold — green */
-  --chart-5: oklch(0.58 0.2 25); /* warning / high-cost — red */
-  --radius: 0.75rem;
+  --chart-1: var(--copper);
+  --chart-2: var(--oxblood);
+  --chart-3: oklch(0.6 0.02 70);
+  --chart-4: oklch(0.75 0.03 70);
+  --chart-5: oklch(0.4 0.02 70);
+  --radius: 0.25rem;
   --sidebar: var(--paper-dark);
   --sidebar-foreground: var(--ink);
   --sidebar-primary: var(--copper);
