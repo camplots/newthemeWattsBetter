@@ -9,8 +9,8 @@ import { BigStatement } from '@/components/concept/big-statement'
 import { MINT, YELLOW, LAVENDER, NAVY, PEACH } from '@/components/concept/theme'
 
 const steps = [
-  { number: '01', title: 'We look at your electricity use', description: 'We use the information from your bill to understand how your home uses power during the day.' },
-  { number: '02', title: 'We show you what solar could change', description: 'See how much solar you could use at home and how much could go back to the grid.' },
+  { number: '01', title: 'We look at your electricity use', description: 'We use the information from your electricity bill to understand how your home uses power during the day.' },
+  { number: '02', title: 'We show you what solar could change', description: 'You can see how much solar could be used in your home and how much could be sent back to the grid.' },
   { number: '03', title: 'You can try different options', description: 'Change the solar and battery sizes and see how they could affect your bill.' },
   { number: '04', title: 'We prepare your report', description: 'Your report brings together the results, the assumptions and the questions worth asking an installer.' },
 ]
@@ -119,7 +119,7 @@ export default function Home() {
             title="What the report includes"
             body={
               <>
-                <p>The report can show:</p>
+                <p>Your report can show:</p>
                 <ul className="mt-4 flex list-disc flex-col gap-2 pl-6 text-base md:text-lg">
                   {reportItems.map((item) => (
                     <li key={item}>{item}</li>
@@ -172,6 +172,10 @@ export default function Home() {
                 <p className="mt-4 text-base font-semibold">
                   We only share your details if you ask us to.
                 </p>
+                <p className="mt-4">
+                  Requesting an introduction does not commit you to accepting a quote or
+                  proceeding with an installation.
+                </p>
               </>
             }
             action={
@@ -210,11 +214,17 @@ export default function Home() {
             backgroundColor={LAVENDER}
             title="How we are paid"
             body={
-              <p>
-                You do not pay us for the assessment, report or conversation. If you ask us to
-                introduce you to an installer and proceed with that installer, the installer pays
-                us a fee. Part of that fee covers the independent inspection and the report.
-              </p>
+              <>
+                <p>You do not pay us for the assessment, report or conversation.</p>
+                <p className="mt-4">
+                  If you ask us to introduce you to an installer and proceed with that installer,
+                  the installer pays us a fee. Part of that fee covers the independent inspection
+                  and the report.
+                </p>
+                <p className="mt-4">
+                  You can use your own installer, seek other quotes or decide not to proceed.
+                </p>
+              </>
             }
             action={
               <Link

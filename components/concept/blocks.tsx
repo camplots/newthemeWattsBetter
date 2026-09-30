@@ -36,20 +36,23 @@ export function StepList({
   return (
     <ul className="border-t border-rule" style={bg ? { backgroundColor: bg } : undefined}>
       {steps.map((step, i) => (
-        <li
-          key={step.number}
-          className={`flex items-center justify-between gap-4 border-rule px-6 py-5 md:px-12 ${
-            i !== steps.length - 1 ? 'border-b' : ''
-          }`}
-        >
-          <div className="flex items-center gap-5">
-            <span className="text-lg font-bold tabular-nums text-ink">{step.number}</span>
-            <div>
-              <p className="text-lg font-bold uppercase tracking-wide text-ink">{step.title}</p>
-              <p className="hidden text-sm font-medium text-ink-soft md:block">{step.description}</p>
-            </div>
-          </div>
-          <ChevronDown className="size-5 shrink-0 text-ink-soft" strokeWidth={2.5} />
+        <li key={step.number} className={`border-rule ${i !== steps.length - 1 ? 'border-b' : ''}`}>
+          <details className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-black md:px-12 [&::-webkit-details-marker]:hidden">
+              <span className="flex items-center gap-5">
+                <span className="text-lg font-bold tabular-nums text-ink">{step.number}</span>
+                <span className="text-lg font-bold uppercase tracking-wide text-ink">{step.title}</span>
+              </span>
+              <ChevronDown
+                className="size-5 shrink-0 text-ink-soft transition-transform group-open:rotate-180"
+                strokeWidth={2.5}
+                aria-hidden="true"
+              />
+            </summary>
+            <p className="max-w-2xl px-6 pb-6 pl-[4.25rem] text-base leading-relaxed font-medium text-ink-soft text-pretty md:px-12 md:pl-[5.75rem]">
+              {step.description}
+            </p>
+          </details>
         </li>
       ))}
     </ul>
