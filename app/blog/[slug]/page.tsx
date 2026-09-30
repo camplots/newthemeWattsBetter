@@ -11,6 +11,8 @@ import { ArticleBlocks } from '@/components/article-blocks'
 import { ReportToc } from '@/components/report-prose'
 import { articles } from '@/lib/articles'
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://newthemewattsbetter.vercel.app'
+
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }))
 }
@@ -29,32 +31,55 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = articles[index]
 
   const toc = article.blocks.flatMap((b) => (b.type === 'h2' ? [{ id: b.id, label: b.text }] : []))
-  const related = articles
-    .filter((a) => a.slug !== article.slug && a.category === article.category && !a.comingSoon)
-    .slice(0, 3)
-  const faqs = article.blocks.find((block) => block.type === 'faq')
-  const faqJsonLd = faqs?.type === 'faq'
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faqs.items.map((item) => ({
-          '@type': 'Question',
-          name: item.q,
-          acceptedAnswer: { '@type': 'Answer', text: item.a },
-        })),
-      }
-    : null
+
+  // Related reading: same category first, then fill from the rest of the library, so an article
+  // whose category has few published siblings still gets a reading path instead of a dead end.
+  const siblings = articles.filter((a) => a.slug !== article.slug && !a.comingSoon)
+  const inCategory = siblings.filter((a) => a.category === article.category)
+  const elsewhere = siblings.filter((a) => a.category !== article.category)
+  const related = [...inCategory, ...elsewhere].slice(0, 3)
+  const relatedLabel = inCategory.length >= 3 ? `More in ${article.category}` : 'Related reading'
+
+  const faqs = article.blocks.flatMap((b) => (b.type === 'faq' ? b.items : []))
+
+  // Structured data. NOTE: article.date is a display string ("September 2026"), not an ISO date,
+  // so datePublished is intentionally omitted until the schema carries a real ISO date field.
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        headline: article.title,
+        description: article.standfirst,
+        articleSection: article.category,
+        inLanguage: 'en-AU',
+        mainEntityOfPage: `${SITE_URL}/blog/${article.slug}`,
+        author: { '@type': 'Organization', name: 'Watts Better', url: SITE_URL },
+        publisher: { '@type': 'Organization', name: 'Watts Better', url: SITE_URL },
+      },
+      ...(faqs.length > 0
+        ? [
+            {
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            },
+          ]
+        : []),
+    ],
+  }
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <SiteHeader />
       <main>
-        {faqJsonLd && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-          />
-        )}
         <PageHero
           eyebrow={`Knowledge · ${article.category}`}
           fileNumber={`KN-${String(index + 1).padStart(2, '0')}`}
@@ -62,7 +87,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           intro={article.standfirst}
         >
           <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-black/60">
-            Watts Better · {article.date ?? 'Coming soon'} · General information only
+            Watts Better · {article.date ?? 'Coming soon'}
           </p>
         </PageHero>
 
@@ -90,7 +115,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         {related.length > 0 && (
           <section className="border-t border-rule bg-paper-dark">
             <div className="mx-auto max-w-[1400px] px-5 py-16 md:px-8 md:py-20">
-              <Eyebrow>More in {article.category}</Eyebrow>
+              <Eyebrow>{relatedLabel}</Eyebrow>
               <div className="mt-8 grid gap-px overflow-hidden border border-rule bg-rule sm:grid-cols-3">
                 {related.map((a) => (
                   <Link

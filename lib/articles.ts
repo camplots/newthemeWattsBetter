@@ -6,8 +6,6 @@ export interface KnowledgeArticle {
   standfirst: string
   category: string
   date?: string
-  author?: string
-  reviewed?: string
   comingSoon?: boolean
   blocks: ArticleBlock[]
 }
@@ -239,36 +237,6 @@ export const articles: KnowledgeArticle[] = [
       },
       {
         "type": "h2",
-        "id": "faq",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "What is the average battery payback period in Australia in 2026?",
-            "a": "For most Australian homes, the payback period for a solar battery in 2026 ranges between 5 and 10 years. Households with an EV or high evening loads see dramatically faster payback."
-          },
-          {
-            "q": "How much does a home battery cost in Australia in 2026?",
-            "a": "A 10 kWh to 13 kWh battery fully installed now typically sits between $8,500 and $12,000 after federal rebates. Under the Cheaper Home Batteries Program, subsidies currently cover roughly 30% of upfront system costs."
-          },
-          {
-            "q": "Are generic ROI calculators reliable?",
-            "a": "Generic calculators assume a household draws power evenly throughout the day, but in practice, usage is clustered — morning showers, evening cooking, late-night entertainment. What actually moves the needle is running different battery sizes against your own historical consumption data, tariff structure, and feed-in rates — not industry averages."
-          },
-          {
-            "q": "What is the 35c/kWh threshold?",
-            "a": "A home battery is financially viable in 2026 if your peak grid rate exceeds 35 cents per kilowatt-hour. Below that rate, the savings you generate by displacing grid power simply cannot outpace the cost of capital over a realistic ownership period."
-          },
-          {
-            "q": "Can I shorten my battery payback period?",
-            "a": "Households that combine appliance scheduling and VPP enrollment typically see a genuine reduction in effective payback of 12 to 18 months compared to a passive install. An EV charging overnight from stored solar adds thousands annually in avoided costs."
-          }
-        ]
-      },
-      {
-        "type": "h2",
         "id": "comparison",
         "text": "Comparison: Solar-Only vs. Solar + Battery ROI"
       },
@@ -305,6 +273,31 @@ export const articles: KnowledgeArticle[] = [
             "Feed-in tariff compression",
             "Oversizing beyond actual consumption"
           ]
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What is the average battery payback period in Australia in 2026?",
+            "a": "For most Australian homes, the payback period for a solar battery in 2026 ranges between 5 and 10 years. Households with an EV or high evening loads see dramatically faster payback."
+          },
+          {
+            "q": "How much does a home battery cost in Australia in 2026?",
+            "a": "A 10 kWh to 13 kWh battery fully installed now typically sits between $8,500 and $12,000 after federal rebates. Under the Cheaper Home Batteries Program, subsidies currently cover roughly 30% of upfront system costs."
+          },
+          {
+            "q": "Are generic ROI calculators reliable?",
+            "a": "Generic calculators assume a household draws power evenly throughout the day, but in practice, usage is clustered — morning showers, evening cooking, late-night entertainment. What actually moves the needle is running different battery sizes against your own historical consumption data, tariff structure, and feed-in rates — not industry averages."
+          },
+          {
+            "q": "What is the 35c/kWh threshold?",
+            "a": "A home battery is financially viable in 2026 if your peak grid rate exceeds 35 cents per kilowatt-hour. Below that rate, the savings you generate by displacing grid power simply cannot outpace the cost of capital over a realistic ownership period."
+          },
+          {
+            "q": "Can I shorten my battery payback period?",
+            "a": "Households that combine appliance scheduling and VPP enrollment typically see a genuine reduction in effective payback of 12 to 18 months compared to a passive install. An EV charging overnight from stored solar adds thousands annually in avoided costs."
+          }
         ]
       },
       {
@@ -520,24 +513,6 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "h2",
-        "id": "sources",
-        "text": "Sources"
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Australian Energy Regulator — Energy Made Easy (independent plan and feed-in tariff comparison)",
-          "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
-          "Australian Energy Market Commission — retail energy competition and pricing reviews"
-        ]
-      },
-      {
-        "type": "h2",
-        "id": "guide-faq",
-        "text": "Frequently asked questions"
-      },
-      {
         "type": "faq",
         "items": [
           {
@@ -563,6 +538,19 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          "Australian Energy Regulator — Energy Made Easy (independent plan and feed-in tariff comparison)",
+          "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+          "Australian Energy Market Commission — retail energy competition and pricing reviews"
+        ]
+      },
+      {
         "type": "cta",
         "text": "Modelled against your actual tariff — not averages. Upload your bill and see how your peak, shoulder and off-peak rates shape solar value, battery economics and plan-change potential.",
         "links": [
@@ -577,7 +565,7 @@ export const articles: KnowledgeArticle[] = [
         "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "date": "September 2026"
+    "date": "August 2026"
   },
   {
     "slug": "how-to-compare-solar-and-battery-quotes-in-brisbane",
@@ -1010,6 +998,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What should I compare first in two solar quotes?",
+            "a": "Compare the same information on both. System size, equipment, assumptions, warranties, installation scope and after-sales support should line up before price is compared."
+          },
+          {
+            "q": "Why is the cheapest quote not always the cheapest system?",
+            "a": "A lower price can reflect a smaller system, different equipment, a narrower installation scope or thinner support after the sale. Comparing headline price alone hides those differences."
+          },
+          {
+            "q": "What does a savings figure in a quote actually mean?",
+            "a": "It is an assumption, not a promise. Ask which tariff, usage pattern and feed-in rate were used, because different assumptions produce very different estimates."
+          },
+          {
+            "q": "What should I ask about changes after I sign?",
+            "a": "Ask what happens if the site differs from the assumptions used, such as roof condition, switchboard work, cable runs or travel, so variation charges do not arrive unexpectedly."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "article-sources",
         "text": "Article sources"
@@ -1039,32 +1048,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "What should I compare first in two solar quotes?",
-            "a": "Compare the same information on both. System size, equipment, assumptions, warranties, installation scope and after-sales support should line up before price is compared."
-          },
-          {
-            "q": "Why is the cheapest quote not always the cheapest system?",
-            "a": "A lower price can reflect a smaller system, different equipment, a narrower installation scope or thinner support after the sale. Comparing headline price alone hides those differences."
-          },
-          {
-            "q": "What does a savings figure in a quote actually mean?",
-            "a": "It is an assumption, not a promise. Ask which tariff, usage pattern and feed-in rate were used, because different assumptions produce very different estimates."
-          },
-          {
-            "q": "What should I ask about changes after I sign?",
-            "a": "Ask what happens if the site differs from the assumptions used, such as roof condition, switchboard work, cable runs or travel, so variation charges do not arrive unexpectedly."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -1493,35 +1476,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "Common questions"
       },
       {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Why not give me three installers?",
-            "a": "You can obtain additional quotes independently if you want them. Watts Better focuses on giving you one considered introduction after you have reviewed your report, discussed the result and clarified the physical starting point."
-          },
-          {
-            "q": "Is one installer guaranteed to be cheaper?",
-            "a": "No. The purpose is not to promise the lowest price. It is to help you compare one proposal against a clearer understanding of your own energy needs and the questions that matter."
-          },
-          {
-            "q": "Can I reject the installer's quote?",
-            "a": "Yes. An introduction does not commit you to an installation, quote or purchase."
-          },
-          {
-            "q": "Can I use my own installer?",
-            "a": "Yes. Your report is yours to use, whether or not you request an introduction through Watts Better."
-          },
-          {
-            "q": "Does Watts Better receive a fee?",
-            "a": "If you request an installer introduction and subsequently proceed with that installer, the installer may pay Watts Better an introducer fee. Part of that fee funds the independent post-installation inspection and report. The arrangement is explained in full on the How We Are Paid page."
-          },
-          {
-            "q": "Does the installer know an inspection will occur?",
-            "a": "Yes. An installer introduced through Watts Better must be prepared to cooperate with the independent inspection process."
-          }
-        ]
-      },
-      {
         "type": "h2",
         "id": "the-bottom-line",
         "text": "The bottom line"
@@ -1564,6 +1518,35 @@ export const articles: KnowledgeArticle[] = [
           {
             "label": "Book a 15-minute chat",
             "href": "/contact-us"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why not give me three installers?",
+            "a": "You can obtain additional quotes independently if you want them. Watts Better focuses on giving you one considered introduction after you have reviewed your report, discussed the result and clarified the physical starting point."
+          },
+          {
+            "q": "Is one installer guaranteed to be cheaper?",
+            "a": "No. The purpose is not to promise the lowest price. It is to help you compare one proposal against a clearer understanding of your own energy needs and the questions that matter."
+          },
+          {
+            "q": "Can I reject the installer's quote?",
+            "a": "Yes. An introduction does not commit you to an installation, quote or purchase."
+          },
+          {
+            "q": "Can I use my own installer?",
+            "a": "Yes. Your report is yours to use, whether or not you request an introduction through Watts Better."
+          },
+          {
+            "q": "Does Watts Better receive a fee?",
+            "a": "If you request an installer introduction and subsequently proceed with that installer, the installer may pay Watts Better an introducer fee. Part of that fee funds the independent post-installation inspection and report. The arrangement is explained in full on the How We Are Paid page."
+          },
+          {
+            "q": "Does the installer know an inspection will occur?",
+            "a": "Yes. An installer introduced through Watts Better must be prepared to cooperate with the independent inspection process."
           }
         ]
       },
@@ -2351,6 +2334,23 @@ export const articles: KnowledgeArticle[] = [
         "text": "Battery + inverter + plan + control method + warranty + household usage"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can the same battery produce different results in different homes?",
+            "a": "Yes. The plan the household is on prices the same battery differently, so the value depends on the tariff as much as on the hardware."
+          },
+          {
+            "q": "Why does the electricity plan matter so much?",
+            "a": "The plan sets the rate your battery displaces when it discharges and the rate you are paid for exports. Together those drive most of the return."
+          },
+          {
+            "q": "What should I check before choosing a plan for a battery?",
+            "a": "Whether your battery is compatible with the plan's program, what the plan pays for exports, and whether its peak windows line up with your household's evening usage."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -2384,28 +2384,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Can the same battery produce different results in different homes?",
-            "a": "Yes. The plan the household is on prices the same battery differently, so the value depends on the tariff as much as on the hardware."
-          },
-          {
-            "q": "Why does the electricity plan matter so much?",
-            "a": "The plan sets the rate your battery displaces when it discharges and the rate you are paid for exports. Together those drive most of the return."
-          },
-          {
-            "q": "What should I check before choosing a plan for a battery?",
-            "a": "Whether your battery is compatible with the plan's program, what the plan pays for exports, and whether its peak windows line up with your household's evening usage."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -2604,11 +2582,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
       },
       {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
         "type": "faq",
         "items": [
           {
@@ -2652,15 +2625,19 @@ export const articles: KnowledgeArticle[] = [
   },
   {
     "slug": "solar-only-battery-later-or-both",
-    "date": "September 2026",
     "title": "Solar only, battery later, or both?",
     "standfirst": "A battery can be valuable, but not every home should add one immediately. Compare the pathways before choosing the equipment.",
     "category": "PV and batteries",
     "blocks": [
       {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
+        "type": "cta",
+        "text": "See which pathway your numbers support.",
+        "links": [
+          {
+            "label": "See the report",
+            "href": "/the-report"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -2676,16 +2653,6 @@ export const articles: KnowledgeArticle[] = [
           {
             "q": "What should I compare before choosing a pathway?",
             "a": "Compare solar only, solar now with a battery later, and both at once against your own usage and tariff. The pathways differ in cost, flexibility and how much they depend on future decisions."
-          }
-        ]
-      },
-      {
-        "type": "cta",
-        "text": "See which pathway your numbers support.",
-        "links": [
-          {
-            "label": "See the report",
-            "href": "/the-report"
           }
         ]
       },
@@ -3396,6 +3363,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "A long warranty is not the same as an easy warranty."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why can two similar-looking batteries cost so differently?",
+            "a": "The price covers different things: warranty terms, the claims process, maintenance requirements and after-sales support, not just capacity and brand."
+          },
+          {
+            "q": "Is a more expensive battery always better value?",
+            "a": "No. A higher price can be worth it when it buys stronger warranty coverage or support, but it should be compared on total ownership cost rather than sticker price."
+          },
+          {
+            "q": "What should I ask about a battery warranty?",
+            "a": "What is covered, for how long, who administers the claim and what is excluded. A warranty is not one thing, and the claims process is part of the product."
+          },
+          {
+            "q": "Does Australian Consumer Law still apply?",
+            "a": "Yes. Consumer guarantees apply independently of the manufacturer's warranty, so a limited warranty does not remove your statutory rights."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -3425,32 +3413,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Why can two similar-looking batteries cost so differently?",
-            "a": "The price covers different things: warranty terms, the claims process, maintenance requirements and after-sales support, not just capacity and brand."
-          },
-          {
-            "q": "Is a more expensive battery always better value?",
-            "a": "No. A higher price can be worth it when it buys stronger warranty coverage or support, but it should be compared on total ownership cost rather than sticker price."
-          },
-          {
-            "q": "What should I ask about a battery warranty?",
-            "a": "What is covered, for how long, who administers the claim and what is excluded. A warranty is not one thing, and the claims process is part of the product."
-          },
-          {
-            "q": "Does Australian Consumer Law still apply?",
-            "a": "Yes. Consumer guarantees apply independently of the manufacturer's warranty, so a limited warranty does not remove your statutory rights."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -4193,6 +4155,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "Who will still be able and willing to support this panel when something goes wrong years after installation?"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Does country of origin determine panel quality?",
+            "a": "No. Quality is not the same as country of origin. Manufacturing standards, independent testing results and the specific product matter more."
+          },
+          {
+            "q": "What does Tier 1 actually mean?",
+            "a": "It is a bankability measure used across the industry, not a quality rating for the panel itself, so it should not be treated as a guarantee of longevity."
+          },
+          {
+            "q": "What matters if the manufacturer may not be around later?",
+            "a": "A performance warranty is only as useful as the entity behind it. Check who honours the warranty, and for how long, because the warranty may outlive the manufacturer."
+          },
+          {
+            "q": "What should I check before accepting a panel?",
+            "a": "Australian product approval, the performance warranty terms, the manufacturer's financial position and the quality of the installation. The lowest price is not automatically the best value."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -4224,32 +4207,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Does country of origin determine panel quality?",
-            "a": "No. Quality is not the same as country of origin. Manufacturing standards, independent testing results and the specific product matter more."
-          },
-          {
-            "q": "What does Tier 1 actually mean?",
-            "a": "It is a bankability measure used across the industry, not a quality rating for the panel itself, so it should not be treated as a guarantee of longevity."
-          },
-          {
-            "q": "What matters if the manufacturer may not be around later?",
-            "a": "A performance warranty is only as useful as the entity behind it. Check who honours the warranty, and for how long, because the warranty may outlive the manufacturer."
-          },
-          {
-            "q": "What should I check before accepting a panel?",
-            "a": "Australian product approval, the performance warranty terms, the manufacturer's financial position and the quality of the installation. The lowest price is not automatically the best value."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -4975,6 +4932,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "The cheapest battery today may be the most expensive battery to expand later."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can I add capacity to a battery later?",
+            "a": "Sometimes, but only within the rules set by the product. Expansion is not just adding more capacity: the age of the modules and the warranty window matter."
+          },
+          {
+            "q": "Why can the inverter limit expansion?",
+            "a": "The inverter caps how much battery capacity the system can manage. A plan to expand may need a larger inverter, or a different product, from the start."
+          },
+          {
+            "q": "Does battery-ready mean I can expand?",
+            "a": "Not by itself. It usually means the wiring or mounting is prepared. The expansion rules, module age and inverter limits still apply."
+          },
+          {
+            "q": "Can expansion cost more than expected?",
+            "a": "Yes. Later modules may not match the originals, any rebate may not apply the same way, and the work itself may be more involved."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -5009,32 +4987,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Can I add capacity to a battery later?",
-            "a": "Sometimes, but only within the rules set by the product. Expansion is not just adding more capacity: the age of the modules and the warranty window matter."
-          },
-          {
-            "q": "Why can the inverter limit expansion?",
-            "a": "The inverter caps how much battery capacity the system can manage. A plan to expand may need a larger inverter, or a different product, from the start."
-          },
-          {
-            "q": "Does battery-ready mean I can expand?",
-            "a": "Not by itself. It usually means the wiring or mounting is prepared. The expansion rules, module age and inverter limits still apply."
-          },
-          {
-            "q": "Can expansion cost more than expected?",
-            "a": "Yes. Later modules may not match the originals, any rebate may not apply the same way, and the work itself may be more involved."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -5871,6 +5823,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "If future storage matters, choose the first battery with the future system in mind."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can a battery make up for limited roof space?",
+            "a": "No. A battery stores energy, it does not create it. If your roof cannot generate enough, a battery cannot close the shortfall."
+          },
+          {
+            "q": "What options help when roof space is limited?",
+            "a": "Reducing demand, sizing storage to what the roof can actually charge, and considering bidirectional charging where the vehicle supports it."
+          },
+          {
+            "q": "Is an EV automatically a home battery?",
+            "a": "No. Bidirectional charging depends on the vehicle, the charger and network approval. An EV is not automatically a home battery."
+          },
+          {
+            "q": "Why does the battery brand matter here?",
+            "a": "The brand can affect your future options, including whether the system can be expanded or integrated with bidirectional charging later."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -5907,32 +5880,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Can a battery make up for limited roof space?",
-            "a": "No. A battery stores energy, it does not create it. If your roof cannot generate enough, a battery cannot close the shortfall."
-          },
-          {
-            "q": "What options help when roof space is limited?",
-            "a": "Reducing demand, sizing storage to what the roof can actually charge, and considering bidirectional charging where the vehicle supports it."
-          },
-          {
-            "q": "Is an EV automatically a home battery?",
-            "a": "No. Bidirectional charging depends on the vehicle, the charger and network approval. An EV is not automatically a home battery."
-          },
-          {
-            "q": "Why does the battery brand matter here?",
-            "a": "The brand can affect your future options, including whether the system can be expanded or integrated with bidirectional charging later."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -6490,6 +6437,27 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What is the Cheaper Home Batteries Program?",
+            "a": "It is a federal program that provides support for home batteries through the Small-scale Renewable Energy Scheme."
+          },
+          {
+            "q": "Do I apply for the discount myself?",
+            "a": "Usually not. The discount is generally handled through the approved supply and installation process rather than as a separate claim by the homeowner."
+          },
+          {
+            "q": "Why does the amount of support change?",
+            "a": "The STC factor is reviewed on a published schedule, so the same battery can attract a different level of support depending on when it is installed."
+          },
+          {
+            "q": "Does the discount decide my system size?",
+            "a": "No. It reduces the cost, but sizing should follow your usage and solar generation rather than the size the discount happens to favour."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "article-sources",
         "text": "Article sources"
@@ -6522,32 +6490,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "What is the Cheaper Home Batteries Program?",
-            "a": "It is a federal program that provides support for home batteries through the Small-scale Renewable Energy Scheme."
-          },
-          {
-            "q": "Do I apply for the discount myself?",
-            "a": "Usually not. The discount is generally handled through the approved supply and installation process rather than as a separate claim by the homeowner."
-          },
-          {
-            "q": "Why does the amount of support change?",
-            "a": "The STC factor is reviewed on a published schedule, so the same battery can attract a different level of support depending on when it is installed."
-          },
-          {
-            "q": "Does the discount decide my system size?",
-            "a": "No. It reduces the cost, but sizing should follow your usage and solar generation rather than the size the discount happens to favour."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -6866,6 +6808,27 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Is solar accreditation the same as battery accreditation?",
+            "a": "Not always. Solar PV and battery work can fall into separate accreditation categories, so check the category that matches the work being done."
+          },
+          {
+            "q": "Should I check the company or the individual?",
+            "a": "Both, but the individual matters. Accreditation attaches to the person who designs or installs, not only to the company they work for."
+          },
+          {
+            "q": "What does NETCC approval tell me?",
+            "a": "It indicates the seller has signed up to the New Energy Tech Consumer Code, which sets conduct and after-sales expectations. It is not a technical accreditation."
+          },
+          {
+            "q": "Does accreditation guarantee good work?",
+            "a": "No. It confirms the required credentials are in place, but quality still depends on the work itself and the documentation you receive."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -6896,32 +6859,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Is solar accreditation the same as battery accreditation?",
-            "a": "Not always. Solar PV and battery work can fall into separate accreditation categories, so check the category that matches the work being done."
-          },
-          {
-            "q": "Should I check the company or the individual?",
-            "a": "Both, but the individual matters. Accreditation attaches to the person who designs or installs, not only to the company they work for."
-          },
-          {
-            "q": "What does NETCC approval tell me?",
-            "a": "It indicates the seller has signed up to the New Energy Tech Consumer Code, which sets conduct and after-sales expectations. It is not a technical accreditation."
-          },
-          {
-            "q": "Does accreditation guarantee good work?",
-            "a": "No. It confirms the required credentials are in place, but quality still depends on the work itself and the documentation you receive."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -7706,6 +7643,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "Who will still be accountable after the sale?"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "How do I find out who will actually install my system?",
+            "a": "Ask directly, then verify the Queensland electrical contractor licence, the ABN and the individual's accreditation before you sign."
+          },
+          {
+            "q": "What is the subcontracting model, and why does it matter?",
+            "a": "A sales company may not be the installer. Understanding which entity designs, installs and signs off the work tells you who is accountable."
+          },
+          {
+            "q": "Why check business continuity?",
+            "a": "A company needs to still be there to honour warranties and after-sales support, which is why a quick check of registration and status is worth doing."
+          },
+          {
+            "q": "What can these checks not prove?",
+            "a": "They confirm credentials, not workmanship. They do not guarantee that the installation itself will meet every requirement."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -7742,32 +7700,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The introduction is your choice."
-      },
-      {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "How do I find out who will actually install my system?",
-            "a": "Ask directly, then verify the Queensland electrical contractor licence, the ABN and the individual's accreditation before you sign."
-          },
-          {
-            "q": "What is the subcontracting model, and why does it matter?",
-            "a": "A sales company may not be the installer. Understanding which entity designs, installs and signs off the work tells you who is accountable."
-          },
-          {
-            "q": "Why check business continuity?",
-            "a": "A company needs to still be there to honour warranties and after-sales support, which is why a quick check of registration and status is worth doing."
-          },
-          {
-            "q": "What can these checks not prove?",
-            "a": "They confirm credentials, not workmanship. They do not guarantee that the installation itself will meet every requirement."
-          }
-        ]
       },
       {
         "type": "cta",
@@ -7942,11 +7874,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "A completed system should be more than switched on. You should know what was assessed and where the evidence is."
       },
       {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
-      },
-      {
         "type": "faq",
         "items": [
           {
@@ -7998,15 +7925,19 @@ export const articles: KnowledgeArticle[] = [
   },
   {
     "slug": "what-to-photograph-before-speaking-with-a-solar-installer",
-    "date": "September 2026",
     "title": "What to photograph before speaking with a solar installer",
     "standfirst": "Your electricity bill explains your energy use. A few useful photographs help clarify the physical starting point.",
     "category": "Inspection and quality",
     "blocks": [
       {
-        "type": "h2",
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions"
+        "type": "cta",
+        "text": "Complete the Photo Capture after your clarity chat.",
+        "links": [
+          {
+            "label": "Contact us",
+            "href": "/contact-us"
+          }
+        ]
       },
       {
         "type": "faq",
@@ -8022,16 +7953,6 @@ export const articles: KnowledgeArticle[] = [
           {
             "q": "Do photographs replace a site assessment?",
             "a": "No. They help the conversation start from an accurate picture, but a site assessment is still required before any design is confirmed."
-          }
-        ]
-      },
-      {
-        "type": "cta",
-        "text": "Complete the Photo Capture after your clarity chat.",
-        "links": [
-          {
-            "label": "Contact us",
-            "href": "/contact-us"
           }
         ]
       },
