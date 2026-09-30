@@ -22,14 +22,13 @@ export default function HowWeArePaidPage() {
       <SiteHeader />
       <main>
         <PageHero
-          eyebrow="Transparency"
-          fileNumber="HP-01"
-          title="Who pays us. And what for."
-          intro="If you request an installer introduction and subsequently proceed with an installation, the installer may pay Watts Better an introducer fee. Part of that fee funds the independent post-install inspection and formal report; Watts Better retains the balance for its advisory and service-coordination work."
+          eyebrow="How we are paid"
+          title="How we are paid"
+          intro="You do not pay us for the assessment, the report or the conversation. If you ask us to introduce you to an installer and proceed with that installer, the installer pays us a fee. Part of that fee funds your independent inspection; we keep the rest for the advice and coordination."
         >
           <Callout label="Your details" tone="copper" className="mt-8 max-w-2xl">
-            We do not share your information with an installer unless you expressly request an
-            introduction.
+            We do not share your information with an installer unless you ask us to introduce
+            you to one.
           </Callout>
         </PageHero>
 
@@ -102,8 +101,7 @@ export default function HowWeArePaidPage() {
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
               So they pay for the introduction out of the budget they&apos;d otherwise spend
-              finding work. Our approach saved them substantially overall when contrasted to
-              default lead cost. It is not an added line on your invoice.
+              finding work. It is not an added line on your invoice.
             </p>
           </div>
         </Section>
@@ -123,14 +121,14 @@ export default function HowWeArePaidPage() {
         </Section>
 
         <Section bg="paper-dark">
-          <Eyebrow>The awkward question</Eyebrow>
+          <Eyebrow>A fair question</Eyebrow>
           <h2 className="mt-5 max-w-3xl font-display text-2xl leading-snug text-ink md:text-3xl">
             Can you be independent if the installer pays you?
           </h2>
           <div className="mt-6 max-w-2xl">
             <PullQuote>
-              Yes — but if you don&apos;t install, we don&apos;t get paid. We won&apos;t pretend
-              that incentive doesn&apos;t exist.
+              If you do not proceed with an installation, we do not get paid. That incentive
+              exists, and we would rather be upfront about it than pretend otherwise.
             </PullQuote>
           </div>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
@@ -216,9 +214,9 @@ export default function HowWeArePaidPage() {
         </Section>
 
         <Section>
-          <Eyebrow>The bottom line</Eyebrow>
+          <Eyebrow>In short</Eyebrow>
           <PullQuote>
-            You should know who is paying whom, and what they get for it.
+            You can know who is paying whom, and what they get for it.
           </PullQuote>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
             You pay us nothing to understand your options. If you choose to act on that, an

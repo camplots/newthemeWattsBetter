@@ -48,11 +48,11 @@ export default function InstallationInspectionsPage() {
     <div>
       <SiteHeader />
       <main>
-        <PageHero eyebrow="Product" fileNumber="IS-01" title="Don't hope. Insist.">
+        <PageHero eyebrow="After installation" title="Independent inspection after installation">
           <div className="mt-10 grid gap-10 md:grid-cols-[1fr_0.7fr] md:items-end">
             <div className="flex flex-col gap-5">
               <ReportP>
-                A solar or battery installation should not simply be assumed to be compliant
+                A completed solar or battery installation is not automatically compliant just
                 because the system has been switched on.
               </ReportP>
               <ReportP>
@@ -97,7 +97,7 @@ export default function InstallationInspectionsPage() {
                 ]}
               />
               <PullQuote>
-                You should not have to assume the installation is fine. You should have evidence.
+                You do not need to assume the installation is fine. You can have evidence.
               </PullQuote>
             </div>
           </div>
@@ -265,10 +265,8 @@ export default function InstallationInspectionsPage() {
             />
           </div>
           <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-            A completed solar or battery system should be more than switched on.
-          </p>
-          <p className="mt-2 font-display text-2xl font-semibold text-ink">
-            It should be independently assessed.
+            A completed solar or battery system can be more than switched on. It can be
+            independently assessed, with a report you can keep.
           </p>
         </Section>
 

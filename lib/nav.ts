@@ -1,21 +1,22 @@
 export const primaryNav = [
-  { label: 'The Report', href: '/the-report' },
-  { label: 'Inspections', href: '/installation-inspections' },
-  { label: 'How It Works', href: '/how-introductions-work' },
-  { label: "How We're Paid", href: '/how-we-are-paid' },
+  { label: 'How it works', href: '/how-introductions-work' },
+  { label: 'Your report', href: '/the-report' },
+  { label: 'After installation', href: '/installation-inspections' },
+  { label: 'How we are paid', href: '/how-we-are-paid' },
+  { label: 'About us', href: '/about-us' },
 ] as const
 
 export const footerNav = {
   products: [
-    { label: 'The Report', href: '/the-report' },
-    { label: 'The Calculator', href: '/calculator' },
-    { label: 'Installation Inspections', href: '/installation-inspections' },
+    { label: 'Your report', href: '/the-report' },
+    { label: 'Start your assessment', href: '/calculator' },
+    { label: 'After installation', href: '/installation-inspections' },
   ],
   company: [
-    { label: 'About Us', href: '/about-us' },
-    { label: "How We're Paid", href: '/how-we-are-paid' },
-    { label: 'How Introductions Work', href: '/how-introductions-work' },
-    { label: 'Contact Us', href: '/contact-us' },
+    { label: 'About us', href: '/about-us' },
+    { label: 'How we are paid', href: '/how-we-are-paid' },
+    { label: 'How it works', href: '/how-introductions-work' },
+    { label: 'Contact us', href: '/contact-us' },
   ],
   learn: [
     { label: 'Knowledge', href: '/blog' },
@@ -51,39 +52,39 @@ interface RelatedItem {
 
 const registry: Record<PageKey, RelatedItem> = {
   home: {
-    label: 'Solar, made clear',
+    label: 'See what solar and batteries could do for your home',
     href: '/',
-    description: 'Where every case file begins.',
+    description: 'Start here to see what solar and batteries could do for your home.',
     tag: 'Start',
   },
   'the-report': {
-    label: 'The Report',
+    label: 'Your report',
     href: '/the-report',
-    description: 'How your bill becomes a personalised energy report.',
+    description: 'How your electricity bill becomes a report you can use.',
     tag: 'Product',
   },
   'installation-inspections': {
-    label: 'Installation Inspections',
+    label: 'After installation',
     href: '/installation-inspections',
-    description: 'Why an installed system still needs independent verification.',
+    description: 'Why a completed installation still gets an independent inspection.',
     tag: 'Product',
   },
   'how-introductions-work': {
-    label: 'How Introductions Work',
+    label: 'How it works',
     href: '/how-introductions-work',
     description: 'One installer, only if you ask for one.',
     tag: 'Process',
   },
   'how-we-are-paid': {
-    label: "How We're Paid",
+    label: 'How we are paid',
     href: '/how-we-are-paid',
     description: 'Who pays Watts Better, and what for.',
     tag: 'Transparency',
   },
   'about-us': {
-    label: 'About Us',
+    label: 'About us',
     href: '/about-us',
-    description: 'Seven years, thousands of appointments, one focus.',
+    description: 'Who Watts Better is and what we do.',
     tag: 'Company',
   },
   'the-industry': {
@@ -93,7 +94,7 @@ const registry: Record<PageKey, RelatedItem> = {
     tag: 'Learn',
   },
   'contact-us': {
-    label: 'Contact Us',
+    label: 'Contact us',
     href: '/contact-us',
     description: 'Questions about your options? Start here.',
     tag: 'Company',
@@ -117,9 +118,9 @@ const registry: Record<PageKey, RelatedItem> = {
     tag: 'Legal',
   },
   calculator: {
-    label: 'The Calculator',
+    label: 'Start your assessment',
     href: '/calculator',
-    description: 'Start your assessment with your energy use.',
+    description: 'Start your assessment with your electricity bill.',
     tag: 'Product',
   },
 }
