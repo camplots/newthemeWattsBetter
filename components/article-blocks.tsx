@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Check } from 'lucide-react'
 import { cn } from 'cn'
 import { Eyebrow } from '@/components/eyebrow'
@@ -21,6 +22,7 @@ export type ArticleBlock =
   | { type: 'twocol'; leftTitle: string; leftItems: string[]; rightTitle: string; rightItems: string[] }
   | { type: 'table'; headers: string[]; rows: string[][] }
   | { type: 'sources'; items: ({ label: string; href?: string } | string)[] }
+  | { type: 'image'; src: string; alt: string; caption?: string }
   | { type: 'findings'; items: { title: string; text: string }[] }
   | { type: 'levers'; items: { title: string; text: string }[] }
   | {
@@ -211,6 +213,24 @@ export function ArticleBlocks({ blocks }: { blocks: ArticleBlock[] }) {
                   </div>
                 )}
               </div>
+            )
+          case 'image':
+            return (
+              <figure key={i} className="my-2">
+                <Image
+                  src={block.src}
+                  alt={block.alt}
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="h-auto w-full border border-rule"
+                />
+                {block.caption && (
+                  <figcaption className="mt-3 text-[13px] leading-relaxed text-ink-soft">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
             )
           case 'table':
             return (

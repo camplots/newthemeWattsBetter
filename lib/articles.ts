@@ -18,6 +18,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Your numbers",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-battery-payback-reality.jpg",
+        "alt": "Illustration of a row of identical houses under a pink sun in which one house is drawn at a different scale with a larger battery on its wall."
+      },
+      {
         "type": "h2",
         "id": "shift",
         "text": "The 2026 Shift: Why Battery Economics Have Changed"
@@ -335,6 +340,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Your numbers",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-tariff-solar-return.jpg",
+        "alt": "Illustration of a pink sun arcing across a day divided into three coloured bands, above a house with a battery on its wall."
+      },
+      {
         "type": "p",
         "text": "Time-of-use (TOU) tariffs charge different rates at different times of day. This can significantly affect the value of your solar generation, the attractiveness of battery storage, and whether changing plans may be more valuable than installing equipment."
       },
@@ -590,6 +600,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "The cheapest quote is not always the cheapest system. Compare system size, equipment, assumptions, warranties, installation scope and after-sales support.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-compare-quotes-brisbane.jpg",
+        "alt": "Illustration of two stacks of documents side by side with a magnifying glass examining the taller stack."
+      },
       {
         "type": "p",
         "text": "A quote is not just a price."
@@ -1108,6 +1123,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "More quotes do not automatically create more clarity. A useful benchmark can be more valuable than several proposals built on different assumptions.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-one-installer-introduction.jpg",
+        "alt": "Illustration of three tangled paths merging into one straight path leading to a single house."
+      },
       {
         "type": "p",
         "text": "Most homeowners are told to get three solar quotes."
@@ -1655,6 +1675,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Why Amber and Flow Power can change your battery ROI. Two households can buy the same battery and achieve very different results — and the same household can get different results simply by changing electricity plans.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-same-battery-different-plan.jpg",
+        "alt": "Illustration of a single battery unit connected to two houses by two differently shaped paths."
+      },
       {
         "type": "p",
         "text": "A battery is not just a box on the wall."
@@ -2483,6 +2508,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "PV and batteries",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-home-battery-brisbane.jpg",
+        "alt": "Illustration of a house at dusk with a battery mounted on its wall and yellow light in the windows."
+      },
+      {
         "type": "p",
         "text": "A home battery can reduce the amount of electricity you buy from the grid."
       },
@@ -2708,6 +2738,183 @@ export const articles: KnowledgeArticle[] = [
     "category": "PV and batteries",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-solar-only-battery-later.jpg",
+        "alt": "Illustration of three houses in a row showing solar panels alone, panels with an empty battery slot, and panels with a fitted battery."
+      },
+      {
+        "type": "p",
+        "text": "Most households treat solar and batteries as a single decision."
+      },
+      {
+        "type": "p",
+        "text": "They are two decisions, and they are made at different times. You can generate electricity now and decide about storing it later. You can do both at once. Both can be right — for different homes."
+      },
+      {
+        "type": "h2",
+        "id": "what-a-battery-actually-adds",
+        "text": "What a battery actually adds"
+      },
+      {
+        "type": "p",
+        "text": "A battery does not make electricity. It moves it."
+      },
+      {
+        "type": "p",
+        "text": "It takes solar that would otherwise be exported during the day and makes it available in the evening, when grid imports are most expensive. That produces value only when two things are true at once: you have surplus solar to store, and you have evening demand to use it."
+      },
+      {
+        "type": "p",
+        "text": "If either is missing, the battery is expensive storage with nothing to store or nothing to spend."
+      },
+      {
+        "type": "h2",
+        "id": "the-three-pathways",
+        "text": "The three pathways"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Solar only — generate during the day, use what you can in the home, export the rest.",
+          "Solar now, battery later — start with generation and add storage when your usage, your tariff or your household makes it worthwhile.",
+          "Both at once — design generation and storage together as one system, sized as a whole."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "when-solar-only-is-the-better-first-move",
+        "text": "When solar only is the better first move"
+      },
+      {
+        "type": "list",
+        "items": [
+          "You do not yet know your household's usage pattern.",
+          "Your evening demand is modest compared with your daytime generation.",
+          "You export a meaningful share of what you generate and your plan pays reasonably for it.",
+          "Your roof is the binding constraint — adding storage does not create more energy to store."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "when-adding-a-battery-later-makes-sense",
+        "text": "When adding a battery later makes sense"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Your household has shifted onto a tariff with a large gap between peak and off-peak rates.",
+          "You have added a large evening load — an electric vehicle, or electric heating.",
+          "Your usage pattern has become predictable enough to size storage against it."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-later-actually-costs-you",
+        "text": "What later actually costs you"
+      },
+      {
+        "type": "p",
+        "text": "The catch in the battery-later pathway is that battery-ready is not the same as expandable."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Expansion rules differ by product. Some batteries have a defined window in which extra modules can be added, and the age and specification of the original modules matter.",
+          "The inverter can be the limit. A hybrid inverter caps how much battery capacity the system can manage, regardless of what the battery itself allows.",
+          "The rebate is set at installation. The federal discount is determined by the STC factor that applies on the date the battery is installed, and that factor declines on a published schedule. The current published schedule moves from 6.8 for May–December 2026 to 5.7 for January–June 2027, then continues to fall in later periods.",
+          "The second visit costs more than the first. Adding capacity later can mean matching discontinued modules, additional labour and a second round of compliance work."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "None of that makes the battery-later pathway wrong. It makes it a decision that has to be checked before you buy, not after."
+      },
+      {
+        "type": "h2",
+        "id": "the-questions-that-decide-it",
+        "text": "The questions that decide it"
+      },
+      {
+        "type": "checklist",
+        "items": [
+          "Do I have surplus daytime solar that I am currently exporting cheaply?",
+          "When does my household actually use power, and what does my plan charge then?",
+          "What does my plan pay for exports, and what does it charge at peak?",
+          "If I add a battery later, will this specific battery and this specific inverter allow it?",
+          "What happens to the rebate if I wait twelve months?",
+          "If my roof is limited, is storage even the constraint I should be solving?"
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-this-means-for-your-decision",
+        "text": "What this means for your decision"
+      },
+      {
+        "type": "p",
+        "text": "If you cannot answer those questions with your own numbers, you are not choosing between equipment. You are choosing between estimates — and every estimate was built on someone else's household."
+      },
+      {
+        "type": "p",
+        "text": "The pathway that looks cheapest on a quote is not always the one that costs least over ten years. The pathway that suits your home is the one your usage, tariff and roof can actually support."
+      },
+      {
+        "type": "h2",
+        "id": "before-you-request-an-introduction",
+        "text": "Before you request an introduction"
+      },
+      {
+        "type": "p",
+        "text": "You do not need to request an installer introduction to receive or discuss your analysis. Understanding which pathway fits your home comes first. The equipment decision comes after."
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Should I install solar and a battery at the same time?",
+            "a": "Not necessarily. Adding a battery later can be sensible, but only if the system and inverter allow the expansion you expect at the time you expect it."
+          },
+          {
+            "q": "What decides whether adding a battery later is realistic?",
+            "a": "The expansion rules and warranty window of the battery you choose, the inverter's capacity for extra modules, and how the rebate applies at the later date."
+          },
+          {
+            "q": "Does the federal battery discount reward waiting?",
+            "a": "No. The discount is set by the STC factor on the installation date, and that factor declines over the published schedule — so waiting generally means less support, not more."
+          },
+          {
+            "q": "What should I compare before choosing a pathway?",
+            "a": "Compare solar only, solar now with a battery later, and both at once against your own usage and tariff. The pathways differ in cost, flexibility and how much they depend on future decisions."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "See which pathway your numbers support.",
         "links": [
@@ -2718,28 +2925,11 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Should I install solar and a battery at the same time?",
-            "a": "Not necessarily. Adding a battery later can make sense, but only if the system and inverter allow the expansion you expect at the time you expect it."
-          },
-          {
-            "q": "What decides whether adding a battery later is realistic?",
-            "a": "The expansion rules and warranty window of the battery you choose, the inverter's capacity for extra modules, and how any rebate applies at the later date."
-          },
-          {
-            "q": "What should I compare before choosing a pathway?",
-            "a": "Compare solar only, solar now with a battery later, and both at once against your own usage and tariff. The pathways differ in cost, flexibility and how much they depend on future decisions."
-          }
-        ]
-      },
-      {
         "type": "note",
         "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "comingSoon": true
+    "date": "September 2026"
   },
   {
     "slug": "why-some-home-batteries-cost-more",
@@ -2747,6 +2937,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Two batteries can look similar on a quote while creating very different ownership experiences. What the price does and does not include.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-why-batteries-cost-more.jpg",
+        "alt": "Illustration of two identical batteries side by side, one shown solid and the other cut open to reveal stacked internal layers."
+      },
       {
         "type": "p",
         "text": "A home battery is not just a box of cells."
@@ -3531,6 +3726,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Lower panel prices have made solar more accessible. But what are you giving up when one panel costs significantly less than another?",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-why-panels-cost-less.jpg",
+        "alt": "Illustration of a solar panel array in which some panels are drawn solid and others only as empty outlines."
+      },
       {
         "type": "p",
         "text": "Solar panels have become dramatically cheaper over the last decade."
@@ -4347,6 +4547,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "PV and batteries",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-expandable-battery.jpg",
+        "alt": "Illustration of a modular battery stack with an empty slot and a floating module above it."
+      },
+      {
         "type": "h2",
         "id": "why-future-expansion-needs-to-be-checked-before-you-buy",
         "text": "Why future expansion needs to be checked before you buy"
@@ -5153,6 +5358,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "A battery cannot create more solar energy than your roof allows. If your household needs more stored energy than your roof can produce, bidirectional EV charging may be part of the answer.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-roof-limits-battery.jpg",
+        "alt": "Illustration of a small house with a modest roof, an oversized battery outline beside it and a car parked under a carport."
+      },
       {
         "type": "h2",
         "id": "when-your-ev-could-become-the-next-battery",
@@ -6068,6 +6278,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Queensland",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-qld-battery-discount.jpg",
+        "alt": "Illustration of descending blocks in a staircase pattern in front of a suburban roofline under a pink sun."
+      },
+      {
         "type": "p",
         "text": "The federal Cheaper Home Batteries Program is helping reduce the upfront cost of eligible battery installations across Australia."
       },
@@ -6699,6 +6914,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Queensland",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-installer-accreditation.jpg",
+        "alt": "Neon-outline illustration of a credential card with a check mark being inspected by a magnifying glass."
+      },
+      {
         "type": "p",
         "text": "A company can advertise solar and batteries without making it obvious who will actually design, install and sign off the work."
       },
@@ -7080,6 +7300,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "A company can advertise solar and batteries without making it obvious who will design, install and sign off the work. Here's how to check.",
     "category": "Queensland",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-who-is-responsible.jpg",
+        "alt": "Neon-outline illustration of an office, a van and a roof linked by a glowing line with a magnifying glass following it."
+      },
       {
         "type": "p",
         "text": "A company can advertise solar and batteries without making it obvious who will actually design, install and sign off the work."
@@ -7942,6 +8167,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Inspection and quality",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-substandard-inspection.jpg",
+        "alt": "Neon-outline illustration of a battery installation with a magnifying glass over it and warning triangles marking points on the installation."
+      },
+      {
         "type": "p",
         "text": "The Clean Energy Regulator's solar-battery inspection results reported that, as at 30 June 2026:"
       },
@@ -8147,6 +8377,170 @@ export const articles: KnowledgeArticle[] = [
     "category": "Inspection and quality",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-photograph-before-installer.jpg",
+        "alt": "Neon-outline illustration of a hand holding a phone photographing a closed switchboard on a wall."
+      },
+      {
+        "type": "p",
+        "text": "Your electricity bill explains your energy use. Photographs explain the physical starting point."
+      },
+      {
+        "type": "p",
+        "text": "Neither replaces a site assessment, and neither is meant to. Together they turn a vague first conversation into a specific one."
+      },
+      {
+        "type": "h2",
+        "id": "why-photographs-help",
+        "text": "Why photographs help"
+      },
+      {
+        "type": "p",
+        "text": "Most first conversations stall on the same handful of questions — what does the switchboard look like, where could equipment actually go, how is the roof accessed."
+      },
+      {
+        "type": "p",
+        "text": "A few photographs answer those questions before anyone drives out. That means the conversation starts at the things that actually need deciding."
+      },
+      {
+        "type": "h2",
+        "id": "the-switchboard",
+        "text": "The switchboard"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A straight-on photograph of the board with its cover closed.",
+          "A closer shot of any labels or ratings printed on the outside.",
+          "Enough distance in the frame to show the wall around it and how much space there is."
+        ]
+      },
+      {
+        "type": "callout",
+        "label": "Safety first",
+        "text": "Do not open the switchboard cover, remove any panel or touch wiring to take a photograph. Photograph what is already exposed, from outside, and leave the enclosure closed.",
+        "tone": "copper"
+      },
+      {
+        "type": "h2",
+        "id": "the-roof-and-its-access",
+        "text": "The roof and its access"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A wide shot of the roof, taken from the ground — skip this one if any part of it is unsafe to reach.",
+          "The route an installer would use to get up there.",
+          "Anything already on the roof: existing panels, an antenna, a vent, a skylight."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "where-equipment-might-go",
+        "text": "Where equipment might go"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The wall or area where an inverter or battery could be mounted.",
+          "That same spot photographed at a different time of day, if it is shaded part of the day.",
+          "The distance between that spot and the switchboard."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "the-details-people-forget",
+        "text": "The details people forget"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The electricity meter and its enclosure.",
+          "Anything that limits access — locking gates, a narrow side path, a steep driveway.",
+          "Existing damage you already know about: cracked tiles, rust, water staining. Photographing it first avoids an argument later about when it happened."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-photographs-cannot-tell-an-installer",
+        "text": "What photographs cannot tell an installer"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The condition of the roof structure beneath the surface.",
+          "Cable routes and whether there is spare capacity in the switchboard.",
+          "Whether equipment will actually fit once clearance requirements are applied.",
+          "Anything a physical site assessment is designed to confirm."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This is why the photographs replace an initial conversation, not an inspection. Treat them as the starting point of an assessment, not a substitute for one."
+      },
+      {
+        "type": "h2",
+        "id": "your-photo-checklist",
+        "text": "Your photo checklist"
+      },
+      {
+        "type": "checklist",
+        "items": [
+          "Switchboard, cover closed, straight on.",
+          "Switchboard labels, close up.",
+          "Wall or area where equipment might be mounted.",
+          "The same spot in shade, if it is shaded part of the day.",
+          "Roof, wide shot from the ground.",
+          "Roof access route.",
+          "Meter and its enclosure.",
+          "Anything you already know is damaged.",
+          "Anything that limits site access."
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why do photographs help before speaking with an installer?",
+            "a": "Your bill explains your energy use. Photographs clarify the physical starting point, so the conversation begins from an accurate picture of your home rather than a description of it."
+          },
+          {
+            "q": "What should I photograph?",
+            "a": "The things an installer would ask about: the switchboard, the roof and its access, the intended equipment location, and anything that might restrict the installation."
+          },
+          {
+            "q": "Should I open the switchboard to photograph inside it?",
+            "a": "No. Never open the enclosure or touch wiring to take a photograph. Photograph the closed board and its external labelling only."
+          },
+          {
+            "q": "Do photographs replace a site assessment?",
+            "a": "No. They help the conversation start from an accurate picture, but a site assessment is still required before any design is confirmed."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "Complete the Photo Capture after your clarity chat.",
         "links": [
@@ -8157,27 +8551,10 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Why do photographs help before speaking with an installer?",
-            "a": "Your bill explains your energy use. Photographs clarify the physical starting point, so the conversation begins from an accurate picture of your home."
-          },
-          {
-            "q": "What should I photograph?",
-            "a": "The things an installer would ask about: the switchboard, the roof and its access, the intended equipment location, and anything that might restrict the installation."
-          },
-          {
-            "q": "Do photographs replace a site assessment?",
-            "a": "No. They help the conversation start from an accurate picture, but a site assessment is still required before any design is confirmed."
-          }
-        ]
-      },
-      {
         "type": "note",
         "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "comingSoon": true
+    "date": "September 2026"
   }
 ]
