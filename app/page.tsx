@@ -4,15 +4,26 @@ import { ArrowRight } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { PillButton } from '@/components/concept/pill-button'
-import { Marquee, StepList } from '@/components/concept/blocks'
+import { StepList } from '@/components/concept/blocks'
 import { BigStatement } from '@/components/concept/big-statement'
-import { MINT, YELLOW, LAVENDER, NAVY, PEACH, PINK } from '@/components/concept/theme'
+import { MINT, YELLOW, LAVENDER, NAVY, PEACH } from '@/components/concept/theme'
 
 const steps = [
   { number: '01', title: 'We look at your electricity use', description: 'We use the information from your bill to understand how your home uses power during the day.' },
   { number: '02', title: 'We show you what solar could change', description: 'See how much solar you could use at home and how much could go back to the grid.' },
   { number: '03', title: 'You can try different options', description: 'Change the solar and battery sizes and see how they could affect your bill.' },
   { number: '04', title: 'We prepare your report', description: 'Your report brings together the results, the assumptions and the questions worth asking an installer.' },
+]
+
+const reportItems = [
+  'when your home uses the most electricity',
+  'what your electricity prices mean for you',
+  'how much solar could be produced',
+  'how much solar could be used in your home',
+  'whether a battery may help',
+  'how different options could affect your bills',
+  'what the figures are based on',
+  'what still needs to be checked at your property',
 ]
 
 export default function Home() {
@@ -77,8 +88,8 @@ export default function Home() {
         {/* Everything below has solid backgrounds and scrolls over the pinned image */}
         <div className="relative">
           <BigStatement
+            compact
             backgroundColor={PEACH}
-            eyebrow="Starting point"
             title="Start with your electricity bill"
             body={
               <p>
@@ -89,42 +100,43 @@ export default function Home() {
           />
 
           <section className="border-b-[3px] border-black" style={{ backgroundColor: LAVENDER }}>
-            <div className="px-6 py-20 md:px-12 md:py-28">
-              <p className="text-sm font-bold uppercase tracking-[0.2em]">How it works</p>
-              <h2 className="mt-4 max-w-5xl text-5xl leading-[0.95] font-bold uppercase tracking-tight text-balance md:text-7xl lg:text-8xl">
+            <div className="px-6 py-16 md:px-12 md:py-24">
+              <h2 className="max-w-3xl text-3xl leading-[1.05] font-bold uppercase tracking-tight text-balance md:text-4xl lg:text-5xl">
                 How the assessment works
               </h2>
             </div>
             <StepList steps={steps} />
             <div className="border-t-[3px] border-black px-6 py-10 md:px-12">
               <PillButton href="/calculator" variant="dark">
-                Start the assessment
+                Start my assessment
               </PillButton>
             </div>
           </section>
 
           <BigStatement
-            backgroundColor={PINK}
-            dark
-            eyebrow="Your report"
+            compact
+            backgroundColor={MINT}
             title="What the report includes"
             body={
-              <p>
-                Your report can show when your home uses the most electricity, how much solar
-                could be produced and used, whether a battery may help, how different options
-                could affect your bills, and what still needs to be checked at your property.
-              </p>
+              <>
+                <p>The report can show:</p>
+                <ul className="mt-4 flex list-disc flex-col gap-2 pl-6 text-base md:text-lg">
+                  {reportItems.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </>
             }
             action={
-              <PillButton href="/the-report" variant="light">
+              <PillButton href="/the-report" variant="dark">
                 See what is in the report
               </PillButton>
             }
           />
 
           <BigStatement
-            backgroundColor={YELLOW}
-            eyebrow="Talk it through"
+            compact
+            backgroundColor={PEACH}
             title="Talk through your report with us"
             body={
               <>
@@ -146,11 +158,9 @@ export default function Home() {
             }
           />
 
-          <Marquee text="See what your electricity bill says before you decide." />
-
           <BigStatement
+            compact
             backgroundColor={MINT}
-            eyebrow="If you want an introduction"
             title="If you want an installer introduction"
             body={
               <>
@@ -172,9 +182,9 @@ export default function Home() {
           />
 
           <BigStatement
+            compact
             backgroundColor={NAVY}
             dark
-            eyebrow="After installation"
             title="Independent inspection after installation"
             body={
               <>
@@ -196,14 +206,14 @@ export default function Home() {
           />
 
           <BigStatement
+            compact
             backgroundColor={LAVENDER}
-            eyebrow="How we are paid"
             title="How we are paid"
             body={
               <p>
                 You do not pay us for the assessment, report or conversation. If you ask us to
                 introduce you to an installer and proceed with that installer, the installer pays
-                us a fee.
+                us a fee. Part of that fee covers the independent inspection and the report.
               </p>
             }
             action={
@@ -218,12 +228,13 @@ export default function Home() {
           />
 
           <BigStatement
+            compact
             backgroundColor={PEACH}
             title="Start the assessment"
             body={<p>See what your electricity bill says before you decide what to do next.</p>}
             action={
               <PillButton href="/calculator" variant="dark">
-                Start with your electricity bill
+                Start with my electricity bill
               </PillButton>
             }
           />
