@@ -66,7 +66,7 @@ const registry: Record<PageKey, RelatedItem> = {
   'installation-inspections': {
     label: 'After installation',
     href: '/installation-inspections',
-    description: 'Why a completed installation still gets an independent inspection.',
+    description: 'Why the finished installation gets an independent inspection.',
     tag: 'Product',
   },
   'how-introductions-work': {

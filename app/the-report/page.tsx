@@ -366,12 +366,8 @@ export default function TheReportPage() {
 
               <ReportSection id="after-installation" title="What happens after installation">
                 <ReportP>
-                  If you proceed with an installer introduced through Watts Better, we arrange an
-                  independent post-installation inspection.
-                </ReportP>
-                <ReportP>
-                  The inspection provides a separate assessment of the completed installation and
-                  gives you a formal report.
+                  If a system is installed through an installer we introduce, an independent
+                  inspector checks the finished installation and you receive the report.
                 </ReportP>
                 <ReportP>The stages are different:</ReportP>
                 <ReportList
@@ -380,7 +376,7 @@ export default function TheReportPage() {
                     'The 15-minute chat clarifies the questions those numbers cannot answer.',
                     'The Photo Capture records useful information about the physical starting point.',
                     'The Installer Introduction is made only if you request it.',
-                    'The Independent Inspection checks the completed installation afterwards.',
+                    'The Independent Inspection checks the finished installation afterwards.',
                   ]}
                 />
                 <div className="mt-4">

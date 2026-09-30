@@ -174,11 +174,12 @@ export default function Home() {
             body={
               <>
                 <p>
-                  If you proceed with an installer introduced through Watts Better, we arrange an
-                  independent inspection after the work is complete.
+                  If you go ahead with an installer we introduce, we arrange an independent
+                  inspector to check the finished installation and send you the report. It
+                  doesn&apos;t cost you anything.
                 </p>
                 <p className="mt-4 text-white/85">
-                  You receive the inspection report at no additional cost to you.
+                  We&apos;re not aware of another solar business in Queensland that does this.
                 </p>
               </>
             }

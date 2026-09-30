@@ -166,7 +166,7 @@ export default function HowIntroductionsWorkPage() {
                 independent inspection after installation at no additional cost to you.
               </p>
               <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-                The inspection assesses the completed installation for:
+                The inspection assesses the finished installation for:
               </p>
               <div className="mt-4">
                 <ReportList

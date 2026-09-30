@@ -7,14 +7,13 @@ import { SiteFooter } from '@/components/site-footer'
 import { PageHero } from '@/components/page-hero'
 import { Section } from '@/components/section'
 import { Eyebrow } from '@/components/eyebrow'
-import { Callout } from '@/components/callout'
 import { RelatedReading } from '@/components/related-reading'
-import { ReportList, ReportP, ReportTwoCol } from '@/components/report-prose'
+import { ReportP, ReportTwoCol } from '@/components/report-prose'
 
 export const metadata: Metadata = {
   title: 'Independent inspection after installation — Watts Better',
   description:
-    'If you proceed with an installer introduced through Watts Better, we arrange an independent inspection after the work is complete. You receive the report at no additional cost.',
+    'If you go ahead with an installer we introduce, we arrange an independent inspection of the finished installation and send you the report. It does not cost you anything.',
 }
 
 const inspected = [
@@ -62,10 +61,20 @@ export default function InstallationInspectionsPage() {
       <main>
         <PageHero eyebrow="After installation" title="Independent inspection after installation">
           <div className="mt-10 grid gap-10 md:grid-cols-[1fr_0.7fr] md:items-start">
-            <ReportP>
-              We arrange an independent inspection of eligible installations after the work is
-              complete.
-            </ReportP>
+            <div className="flex flex-col gap-4">
+              <ReportP>
+                If you go ahead with an installer we introduce, we arrange an independent inspector
+                to check the finished installation and send you the report. It doesn&apos;t cost
+                you anything.
+              </ReportP>
+              <ReportP>
+                The inspector isn&apos;t chosen by or employed by the installer. We engage them
+                independently, and their report goes to you.
+              </ReportP>
+              <ReportP>
+                We&apos;re not aware of another solar business in Queensland that does this.
+              </ReportP>
+            </div>
             <div className="border border-rule bg-card p-8">
               <p className="font-display text-2xl leading-tight text-ink md:text-3xl">
                 No additional cost to you
@@ -87,9 +96,10 @@ export default function InstallationInspectionsPage() {
               </h2>
             </div>
             <ReportP>
-              Some parts of a solar or battery installation are difficult for a homeowner to
-              check. An independent inspection gives you a record of what was looked at and
-              whether anything needs attention.
+              A solar business is usually paid when it sells and installs a system. An independent
+              inspection has to be arranged by someone, and usually that means hiring an inspector
+              at your own cost after the job is finished. We arrange it as part of the service, and
+              part of the fee the installer pays us covers it.
             </ReportP>
           </div>
         </Section>
@@ -128,19 +138,10 @@ export default function InstallationInspectionsPage() {
                 What you receive
               </h2>
               <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
-                You receive a report showing:
+                A report showing the areas inspected, the findings, photographs where relevant,
+                anything that needs attention and the overall result. It&apos;s yours to keep and
+                use however you like.
               </p>
-              <div className="mt-4">
-                <ReportList
-                  items={[
-                    'the areas inspected',
-                    'the findings',
-                    'photographs where relevant',
-                    'anything that needs attention',
-                    'the overall inspection result',
-                  ]}
-                />
-              </div>
             </div>
             <div>
               <Eyebrow>The steps</Eyebrow>
@@ -199,12 +200,10 @@ export default function InstallationInspectionsPage() {
                 What you pay
               </h2>
               <ReportP>
-                If you proceed with an installer introduced through Watts Better, the installer
-                pays us a fee. Part of that fee covers the inspection and report.
+                Nothing. There&apos;s no separate inspection invoice from Watts Better. If you went
+                ahead with an installer we introduced, part of their fee to us covers the
+                inspection and the report.
               </ReportP>
-              <Callout label="No separate invoice" tone="copper">
-                You do not receive a separate inspection invoice from Watts Better.
-              </Callout>
             </div>
           </div>
         </Section>
