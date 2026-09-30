@@ -16,7 +16,7 @@ export function CtaBand({
   ctaHref: string
 }) {
   return (
-    <section className="relative overflow-hidden border-t-4 border-copper bg-ink-deep bg-ledger-dark">
+    <section className="relative overflow-hidden border-t-2 border-copper bg-ink-deep bg-ledger-dark">
       <div className="relative mx-auto max-w-[1400px] px-5 py-16 md:px-8 md:py-24">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
@@ -30,7 +30,7 @@ export function CtaBand({
           </div>
           <Link
             href={ctaHref}
-            className="group flex shrink-0 items-center gap-3 border border-ink/10 bg-copper px-7 py-4 font-mono text-xs uppercase tracking-[0.14em] text-ink shadow-[6px_6px_0_0_var(--copper-deep)] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[9px_9px_0_0_var(--copper-deep)]"
+            className="group flex shrink-0 items-center gap-3 rounded-xl bg-gradient-to-r from-copper to-copper-deep px-7 py-4 font-mono text-xs uppercase tracking-[0.14em] text-paper shadow-md transition-all hover:shadow-lg hover:brightness-105"
           >
             {ctaLabel}
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

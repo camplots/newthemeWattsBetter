@@ -64,16 +64,13 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link href="/contact-us" className="transition-opacity hover:opacity-60">
-            Contact
-          </Link>
         </nav>
 
         <Link
           href="/calculator"
           className="hidden items-center gap-2 rounded-full border-[3px] border-black bg-black px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-black lg:inline-flex"
         >
-          Get started
+          Start your assessment
           <ArrowRight className="size-4" />
         </Link>
 
@@ -91,7 +88,7 @@ export function SiteHeader() {
       {open && (
         <nav aria-label="Mobile" className="border-t-[3px] border-black bg-white px-5 py-5 lg:hidden">
           <ul className="flex flex-col gap-4">
-            {[...primaryNav, { label: 'Contact', href: '/contact-us' }].map((item) => (
+            {[...primaryNav, { label: 'Contact us', href: '/contact-us' }].map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -108,7 +105,7 @@ export function SiteHeader() {
             onClick={() => setOpen(false)}
             className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border-[3px] border-black bg-black px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
           >
-            Get started
+            Start your assessment
             <ArrowRight className="size-4" />
           </Link>
         </nav>

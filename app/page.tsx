@@ -6,14 +6,13 @@ import { SiteFooter } from '@/components/site-footer'
 import { PillButton } from '@/components/concept/pill-button'
 import { Marquee, StepList } from '@/components/concept/blocks'
 import { BigStatement } from '@/components/concept/big-statement'
-import { MINT, YELLOW, LAVENDER, NAVY, PEACH } from '@/components/concept/theme'
+import { MINT, YELLOW, LAVENDER, NAVY, PEACH, PINK } from '@/components/concept/theme'
 
 const steps = [
-  { number: '01', title: 'Calculate', description: 'See how your home uses energy.' },
-  { number: '02', title: 'Understand', description: 'See what your results mean.' },
-  { number: '03', title: 'Clarify', description: 'Book a call with us for extra guidance.' },
-  { number: '04', title: 'Choose', description: 'Access an installer if elected.' },
-  { number: '05', title: 'Verify', description: 'Get an independent inspection after install.' },
+  { number: '01', title: 'We look at your electricity use', description: 'We use the information from your bill to understand how your home uses power during the day.' },
+  { number: '02', title: 'We show you what solar could change', description: 'See how much solar you could use at home and how much could go back to the grid.' },
+  { number: '03', title: 'You can try different options', description: 'Change the solar and battery sizes and see how they could affect your bill.' },
+  { number: '04', title: 'We prepare your report', description: 'Your report brings together the results, the assumptions and the questions worth asking an installer.' },
 ]
 
 export default function Home() {
@@ -38,23 +37,31 @@ export default function Home() {
         {/* Hero copy sits over the pinned image */}
         <section className="relative flex min-h-svh flex-col justify-end">
           <div className="flex flex-col items-start gap-6 px-6 pb-16 md:px-12 md:pb-24">
-            <h1 className="max-w-4xl text-6xl leading-[0.95] font-bold uppercase tracking-tight text-white text-balance md:text-8xl lg:text-9xl">
-              Solar, made clear.
+            <h1 className="max-w-4xl text-5xl leading-[0.98] font-bold uppercase tracking-tight text-white text-balance md:text-7xl lg:text-8xl">
+              See what solar and batteries could do for your home
             </h1>
             <p className="max-w-lg text-lg font-semibold text-white/90 md:text-xl">
-              Independent guidance before you choose a system, and an independent inspection
-              after it&apos;s installed.
+              We use your electricity bill to show how your home uses power, what solar could
+              change and whether a battery may be worth considering.
             </p>
-            <PillButton href="/calculator" variant="light">
-              Explore your options
-            </PillButton>
+            <div className="flex flex-wrap items-center gap-4">
+              <PillButton href="/calculator" variant="light">
+                Start with your electricity bill
+              </PillButton>
+              <Link
+                href="/the-report"
+                className="text-sm font-bold uppercase tracking-wide text-white underline underline-offset-4"
+              >
+                See an example report
+              </Link>
+            </div>
           </div>
           <div
             className="flex flex-wrap items-center justify-between gap-4 border-y-[3px] border-black px-6 py-4 md:px-12"
             style={{ backgroundColor: YELLOW }}
           >
             <p className="text-sm font-bold uppercase tracking-wide">
-              Not sure where to start? See what a real report looks like.
+              Free to use. We will not pass your details to an installer unless you ask us to.
             </p>
             <Link href="/the-report" className="text-sm font-bold uppercase tracking-wide underline">
               See a sample report
@@ -66,88 +73,152 @@ export default function Home() {
         <div className="relative">
           <BigStatement
             backgroundColor={PEACH}
-            title="A quote gives you a price. Not a plan."
-            body={<p>Understand what you&apos;re actually comparing before you choose.</p>}
-          />
-
-          <BigStatement
-            backgroundColor={NAVY}
-            dark
-            eyebrow="System status"
-            title={
-              <>
-                Don&apos;t hope. <span style={{ color: YELLOW }}>Insist.</span>
-              </>
-            }
+            eyebrow="Starting point"
+            title="Start with your electricity bill"
             body={
               <p>
-                We arrange an independent inspection to check the compliance, workmanship, safety,
-                and functioning of your installation — then hand the report to you.
+                Your bill can show when you use electricity, what you pay for it and how much
+                power you buy from the grid.
               </p>
-            }
-            action={
-              <PillButton href="/installation-inspections" variant="light">
-                How it works
-              </PillButton>
             }
           />
 
           <section className="border-b-[3px] border-black" style={{ backgroundColor: LAVENDER }}>
             <div className="px-6 py-20 md:px-12 md:py-28">
-              <p className="text-sm font-bold uppercase tracking-[0.2em]">The five stages</p>
+              <p className="text-sm font-bold uppercase tracking-[0.2em]">How it works</p>
               <h2 className="mt-4 max-w-5xl text-5xl leading-[0.95] font-bold uppercase tracking-tight text-balance md:text-7xl lg:text-8xl">
-                Comprehensive inspections. Standard.
+                How the assessment works
               </h2>
             </div>
             <StepList steps={steps} />
+            <div className="border-t-[3px] border-black px-6 py-10 md:px-12">
+              <PillButton href="/calculator" variant="dark">
+                Start the assessment
+              </PillButton>
+            </div>
           </section>
 
           <BigStatement
-            backgroundColor={YELLOW}
-            eyebrow="Comparing quotes?"
-            title="Talk to a human, not a sales script."
-            body={<p>Book a 15-minute call for open, independent advice.</p>}
+            backgroundColor={PINK}
+            dark
+            eyebrow="Your report"
+            title="What the report includes"
+            body={
+              <p>
+                Your report can show when your home uses the most electricity, how much solar
+                could be produced and used, whether a battery may help, how different options
+                could affect your bills, and what still needs to be checked at your property.
+              </p>
+            }
             action={
-              <PillButton href="/contact-us" variant="dark">
-                Book a chat
+              <PillButton href="/the-report" variant="light">
+                See what is in the report
               </PillButton>
             }
           />
 
-          <Marquee text="Stop guessing. Start verifying." />
-
           <BigStatement
-            backgroundColor={LAVENDER}
-            eyebrow="Transparency"
-            title="Who pays us. And what for."
+            backgroundColor={YELLOW}
+            eyebrow="Talk it through"
+            title="Talk through your report with us"
             body={
               <>
                 <p>
-                  If you ask us to make an installer introduction and proceed with that installer,
-                  they pay Watts Better an introducer fee. Part of it funds your independent
-                  inspection; the rest covers our advice and coordination.
+                  Your electricity bill cannot show everything about your home. We can explain
+                  the report, answer your questions and discuss anything that still needs to be
+                  checked.
                 </p>
-                <p className="mt-4">We never share your details unless you ask us to.</p>
+                <p className="mt-4 text-base font-semibold">
+                  This is not an installer sales appointment. It does not commit you to buying
+                  anything.
+                </p>
               </>
+            }
+            action={
+              <PillButton href="/contact-us" variant="dark">
+                Book a 15-minute call
+              </PillButton>
+            }
+          />
+
+          <Marquee text="See what your electricity bill says before you decide." />
+
+          <BigStatement
+            backgroundColor={MINT}
+            eyebrow="If you want an introduction"
+            title="If you want an installer introduction"
+            body={
+              <>
+                <p>
+                  You can use your own installer or continue researching. If you want an
+                  introduction, we can put you in touch with one installer we are prepared to
+                  recommend.
+                </p>
+                <p className="mt-4 text-base font-semibold">
+                  We only share your details if you ask us to.
+                </p>
+              </>
+            }
+            action={
+              <PillButton href="/how-introductions-work" variant="dark">
+                How introductions work
+              </PillButton>
+            }
+          />
+
+          <BigStatement
+            backgroundColor={NAVY}
+            dark
+            eyebrow="After installation"
+            title="Independent inspection after installation"
+            body={
+              <>
+                <p>
+                  If you go ahead with an installer we introduce, we arrange an independent
+                  inspector to check the finished installation and send you the report. It
+                  doesn&apos;t cost you anything.
+                </p>
+                <p className="mt-4 text-white/85">
+                  We&apos;re not aware of another solar business in Queensland that does this.
+                </p>
+              </>
+            }
+            action={
+              <PillButton href="/installation-inspections" variant="light">
+                How inspections work
+              </PillButton>
+            }
+          />
+
+          <BigStatement
+            backgroundColor={LAVENDER}
+            eyebrow="How we are paid"
+            title="How we are paid"
+            body={
+              <p>
+                You do not pay us for the assessment, report or conversation. If you ask us to
+                introduce you to an installer and proceed with that installer, the installer pays
+                us a fee.
+              </p>
             }
             action={
               <Link
                 href="/how-we-are-paid"
                 className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide underline"
               >
-                Read the full breakdown
+                Read how we are paid
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             }
           />
 
           <BigStatement
-            backgroundColor={MINT}
-            title="Start with your energy use."
-            body={<p>A quick assessment to help you understand your solar and battery options.</p>}
+            backgroundColor={PEACH}
+            title="Start the assessment"
+            body={<p>See what your electricity bill says before you decide what to do next.</p>}
             action={
               <PillButton href="/calculator" variant="dark">
-                Start assessment
+                Start with your electricity bill
               </PillButton>
             }
           />

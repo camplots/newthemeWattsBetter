@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const toc = [
   { id: 'clearer-starting-point', label: 'A clearer starting point' },
   { id: 'energy-profile', label: 'Your energy profile' },
-  { id: 'tariff', label: 'Your tariff' },
+  { id: 'tariff', label: 'Your electricity prices' },
   { id: 'solar-options', label: 'Your solar options' },
   { id: 'battery-options', label: 'Your battery options' },
   { id: 'options-compared', label: 'Your options compared' },
@@ -116,7 +116,7 @@ export default function TheReportPage() {
                     'Daytime consumption',
                     'Evening consumption',
                     'Peak-period usage',
-                    'Grid imports',
+                    'Power bought from the grid',
                     'Solar generation, where information is available',
                     'Energy exported to the grid',
                   ]}
@@ -127,11 +127,11 @@ export default function TheReportPage() {
                 <ReportLead>It is when your home needs it.</ReportLead>
               </ReportSection>
 
-              <ReportSection id="tariff" title="Your tariff">
+              <ReportSection id="tariff" title="Your electricity prices">
                 <ReportP>The cost of electricity depends on when it is used.</ReportP>
                 <ReportP>
-                  Your report explains the tariff information available from your bill and how
-                  it affects the value of solar and battery storage.
+                  Your report explains the electricity prices shown on your bill and how
+                  they affect the value of solar and battery storage.
                 </ReportP>
                 <ReportP>It may identify:</ReportP>
                 <ReportList
@@ -148,20 +148,20 @@ export default function TheReportPage() {
                   A battery may be more useful in one household than another, even when both
                   homes use a similar amount of electricity.
                 </ReportP>
-                <ReportLead>The tariff and usage pattern matter.</ReportLead>
+                <ReportLead>Your electricity prices and when you use power both matter.</ReportLead>
               </ReportSection>
 
               <ReportSection id="solar-options" title="Your solar options">
                 <ReportP>
-                  The report considers solar PV pathways based on your available energy
+                  The report considers solar options based on your available energy
                   information.
                 </ReportP>
                 <ReportP>It may compare different system sizes and explain the potential effect on:</ReportP>
                 <ReportList
                   items={[
                     'Solar generation',
-                    'Grid imports',
-                    'Solar self-consumption',
+                    'Power bought from the grid',
+                    'Solar used in your home',
                     'Exported energy',
                     'Estimated savings',
                     'Indicative payback',
@@ -190,7 +190,7 @@ export default function TheReportPage() {
 
               <ReportSection id="options-compared" title="Your options compared">
                 <ReportP>
-                  Your report compares different solar PV and home battery pathways and
+                  Your report compares different solar PV and home battery options and
                   identifies the options that appear most relevant to your circumstances.
                 </ReportP>
                 <ReportP>These may include:</ReportP>
@@ -210,7 +210,7 @@ export default function TheReportPage() {
                   items={[
                     'Upfront cost',
                     'Estimated savings',
-                    'Self-consumption',
+                    'Solar used in your home',
                     'Indicative payback',
                     'Battery utilisation',
                     'Exported energy',
@@ -229,8 +229,8 @@ export default function TheReportPage() {
                   items={[
                     'What system size is actually justified by my usage?',
                     'Is the battery sized to my evening demand?',
-                    'What tariff has been used in the modelling?',
-                    'What happens if my feed-in tariff changes?',
+                    'What electricity prices have been used in the figures?',
+                    'What happens if the price paid for solar sent to the grid changes?',
                     'Is the battery on the approved product list?',
                     'Does the installer hold the relevant battery accreditation?',
                     'Is a switchboard upgrade included?',
@@ -247,7 +247,7 @@ export default function TheReportPage() {
                 <ReportList
                   items={[
                     'The bill period analysed',
-                    'The tariff information available',
+                    'The electricity prices available',
                     'Solar generation assumptions',
                     'Battery assumptions',
                     'Estimated system performance',
@@ -366,12 +366,8 @@ export default function TheReportPage() {
 
               <ReportSection id="after-installation" title="What happens after installation">
                 <ReportP>
-                  If you proceed with an installer introduced through Watts Better, we arrange an
-                  independent post-installation inspection.
-                </ReportP>
-                <ReportP>
-                  The inspection provides a separate assessment of the completed installation and
-                  gives you a formal report.
+                  If a system is installed through an installer we introduce, an independent
+                  inspector checks the finished installation and you receive the report.
                 </ReportP>
                 <ReportP>The stages are different:</ReportP>
                 <ReportList
@@ -380,7 +376,7 @@ export default function TheReportPage() {
                     'The 15-minute chat clarifies the questions those numbers cannot answer.',
                     'The Photo Capture records useful information about the physical starting point.',
                     'The Installer Introduction is made only if you request it.',
-                    'The Independent Inspection checks the completed installation afterwards.',
+                    'The Independent Inspection checks the finished installation afterwards.',
                   ]}
                 />
                 <div className="mt-4">
@@ -389,7 +385,7 @@ export default function TheReportPage() {
                     leftItems={[
                       'An independent starting point',
                       'A bill-based analysis',
-                      'A comparison of solar PV and home battery pathways',
+                      'A comparison of solar and home battery options',
                       'A record of the assumptions used',
                       'A preparation tool for an installer conversation',
                       'A way to identify the questions that still need answering',
@@ -432,7 +428,7 @@ export default function TheReportPage() {
                     },
                     {
                       q: 'Can the report confirm whether my roof is suitable?',
-                      a: 'No. The report helps identify the energy pathway worth exploring. An installer must still confirm roof condition, available space, shading, structural requirements and installation feasibility.',
+                      a: 'No. The report helps show which options are worth looking into. An installer must still confirm roof condition, available space, shading, structural requirements and installation feasibility.',
                     },
                     {
                       q: 'Why book a 15-minute chat?',

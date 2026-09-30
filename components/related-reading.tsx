@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { getRelated, type PageKey } from '@/lib/nav'
 import { Eyebrow } from '@/components/eyebrow'
 
-export function RelatedReading({ keys, title = 'Continue the file' }: { keys: PageKey[]; title?: string }) {
+export function RelatedReading({ keys, title = 'Related reading' }: { keys: PageKey[]; title?: string }) {
   const items = getRelated(keys)
   return (
     <section className="border-t border-rule bg-paper-dark">
