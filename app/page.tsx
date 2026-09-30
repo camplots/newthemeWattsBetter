@@ -32,25 +32,30 @@ export default function Home() {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2a1233]/75 via-[#2a1233]/35 to-transparent md:via-[#2a1233]/40 md:via-30% md:to-65%" />
         </div>
 
         {/* Hero copy sits over the pinned image */}
         <section className="relative flex min-h-svh flex-col justify-end">
-          <div className="flex flex-col items-start gap-6 px-6 pb-16 md:px-12 md:pb-24">
-            <h1 className="max-w-4xl text-5xl leading-[0.98] font-bold uppercase tracking-tight text-white text-balance md:text-7xl lg:text-8xl">
+          <div className="flex flex-col items-start px-6 pt-32 pb-16 md:px-12 md:pb-24">
+            <h1 className="max-w-4xl text-4xl leading-[1.08] font-bold tracking-tight text-white text-balance sm:text-5xl lg:text-[3.5rem]">
               See what solar and batteries could do for your home
             </h1>
-            <p className="max-w-lg text-lg font-semibold text-white/90 md:text-xl">
-              We use your electricity bill to show how your home uses power, what solar could
-              change and whether a battery may be worth considering.
+            <p className="mt-6 max-w-md text-base leading-relaxed font-medium text-white/90 text-pretty md:mt-8 md:text-lg">
+              Use your electricity bill to see how your home uses power, what solar could change
+              and whether a battery could help.
             </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <PillButton href="/calculator" variant="light">
-                Start with your electricity bill
-              </PillButton>
+            <div className="mt-8 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6">
+              <Link
+                href="/calculator"
+                className="inline-flex items-center gap-2 rounded-full border-[3px] border-black bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition-colors hover:bg-black hover:text-white"
+              >
+                Start with my electricity bill
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
               <Link
                 href="/the-report"
-                className="text-sm font-bold uppercase tracking-wide text-white underline underline-offset-4"
+                className="text-sm font-semibold text-white/90 underline underline-offset-4 hover:text-white"
               >
                 See an example report
               </Link>
