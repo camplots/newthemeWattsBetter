@@ -18,6 +18,11 @@ export const articles: KnowledgeArticle[] = [
     "category": "Your numbers",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-battery-payback-reality.jpg",
+        "alt": "Illustration of a row of identical houses under a pink sun in which one house is drawn at a different scale with a larger battery on its wall."
+      },
+      {
         "type": "h2",
         "id": "shift",
         "text": "The 2026 Shift: Why Battery Economics Have Changed"
@@ -237,36 +242,6 @@ export const articles: KnowledgeArticle[] = [
       },
       {
         "type": "h2",
-        "id": "faq",
-        "text": "Frequently asked questions"
-      },
-      {
-        "type": "faq",
-        "items": [
-          {
-            "q": "What is the average battery payback period in Australia in 2026?",
-            "a": "For most Australian homes, the payback period for a solar battery in 2026 ranges between 5 and 10 years. Households with an EV or high evening loads see dramatically faster payback."
-          },
-          {
-            "q": "How much does a home battery cost in Australia in 2026?",
-            "a": "A 10 kWh to 13 kWh battery fully installed now typically sits between $8,500 and $12,000 after federal rebates. Under the Cheaper Home Batteries Program, subsidies currently cover roughly 30% of upfront system costs."
-          },
-          {
-            "q": "Are generic ROI calculators reliable?",
-            "a": "Generic calculators assume a household draws power evenly throughout the day, but in practice, usage is clustered — morning showers, evening cooking, late-night entertainment. What actually moves the needle is running different battery sizes against your own historical consumption data, tariff structure, and feed-in rates — not industry averages."
-          },
-          {
-            "q": "What is the 35c/kWh threshold?",
-            "a": "A home battery is financially viable in 2026 if your peak grid rate exceeds 35 cents per kilowatt-hour. Below that rate, the savings you generate by displacing grid power simply cannot outpace the cost of capital over a realistic ownership period."
-          },
-          {
-            "q": "Can I shorten my battery payback period?",
-            "a": "Households that combine appliance scheduling and VPP enrollment typically see a genuine reduction in effective payback of 12 to 18 months compared to a passive install. An EV charging overnight from stored solar adds thousands annually in avoided costs."
-          }
-        ]
-      },
-      {
-        "type": "h2",
         "id": "comparison",
         "text": "Comparison: Solar-Only vs. Solar + Battery ROI"
       },
@@ -306,6 +281,31 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What is the average battery payback period in Australia in 2026?",
+            "a": "For most Australian homes, the payback period for a solar battery in 2026 ranges between 5 and 10 years. Households with an EV or high evening loads see dramatically faster payback."
+          },
+          {
+            "q": "How much does a home battery cost in Australia in 2026?",
+            "a": "A 10 kWh to 13 kWh battery fully installed now typically sits between $8,500 and $12,000 after federal rebates. Under the Cheaper Home Batteries Program, subsidies currently cover roughly 30% of upfront system costs."
+          },
+          {
+            "q": "Are generic ROI calculators reliable?",
+            "a": "Generic calculators assume a household draws power evenly throughout the day, but in practice, usage is clustered — morning showers, evening cooking, late-night entertainment. What actually moves the needle is running different battery sizes against your own historical consumption data, tariff structure, and feed-in rates — not industry averages."
+          },
+          {
+            "q": "What is the 35c/kWh threshold?",
+            "a": "A home battery is financially viable in 2026 if your peak grid rate exceeds 35 cents per kilowatt-hour. Below that rate, the savings you generate by displacing grid power simply cannot outpace the cost of capital over a realistic ownership period."
+          },
+          {
+            "q": "Can I shorten my battery payback period?",
+            "a": "Households that combine appliance scheduling and VPP enrollment typically see a genuine reduction in effective payback of 12 to 18 months compared to a passive install. An EV charging overnight from stored solar adds thousands annually in avoided costs."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources & Authoritative References"
@@ -313,14 +313,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "RenewEconomy: 2025 Australian battery market mainstream adoption analysis",
-          "Clean Energy Regulator: Cheaper Home Batteries Program — program design and capacity caps",
-          "Watts Better Analysis: Automated energy profile analysis and investment modelling report"
+          {
+            "label": "RenewEconomy: 2025 Australian battery market mainstream adoption analysis",
+            "href": "https://reneweconomy.com.au/"
+          },
+          {
+            "label": "Clean Energy Regulator: Cheaper Home Batteries Program — program design and capacity caps",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Watts Better Analysis: Automated energy profile analysis and investment modelling report"
+          }
         ]
       },
       {
         "type": "note",
-        "text": "GENERAL INFORMATION ONLY — This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice or advice from a qualified solar and battery installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -331,6 +339,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Most homeowners focus on panel efficiency, inverter brands and install costs. But one of the biggest factors in your solar return is something you may never have considered: your electricity tariff’s clock.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-tariff-solar-return.jpg",
+        "alt": "Illustration of a pink sun arcing across a day divided into three coloured bands, above a house with a battery on its wall."
+      },
       {
         "type": "p",
         "text": "Time-of-use (TOU) tariffs charge different rates at different times of day. This can significantly affect the value of your solar generation, the attractiveness of battery storage, and whether changing plans may be more valuable than installing equipment."
@@ -518,11 +531,6 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "h2",
-        "id": "guide-faq",
-        "text": "Frequently asked questions"
-      },
-      {
         "type": "faq",
         "items": [
           {
@@ -548,6 +556,28 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "Australian Energy Regulator — Energy Made Easy (independent plan and feed-in tariff comparison)",
+            "href": "https://www.energymadeeasy.gov.au/"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "Australian Energy Market Commission — retail energy competition and pricing reviews",
+            "href": "https://www.aemc.gov.au/"
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "Modelled against your actual tariff — not averages. Upload your bill and see how your peak, shoulder and off-peak rates shape solar value, battery economics and plan-change potential.",
         "links": [
@@ -556,6 +586,10 @@ export const articles: KnowledgeArticle[] = [
             "href": "/calculator"
           }
         ]
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "August 2026"
@@ -566,6 +600,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "The cheapest quote is not always the cheapest system. Compare system size, equipment, assumptions, warranties, installation scope and after-sales support.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-compare-quotes-brisbane.jpg",
+        "alt": "Illustration of two stacks of documents side by side with a magnifying glass examining the taller stack."
+      },
       {
         "type": "p",
         "text": "A quote is not just a price."
@@ -991,6 +1030,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What should I compare first in two solar quotes?",
+            "a": "Compare the same information on both. System size, equipment, assumptions, warranties, installation scope and after-sales support should line up before price is compared."
+          },
+          {
+            "q": "Why is the cheapest quote not always the cheapest system?",
+            "a": "A lower price can reflect a smaller system, different equipment, a narrower installation scope or thinner support after the sale. Comparing headline price alone hides those differences."
+          },
+          {
+            "q": "What does a savings figure in a quote actually mean?",
+            "a": "It is an assumption, not a promise. Ask which tariff, usage pattern and feed-in rate were used, because different assumptions produce very different estimates."
+          },
+          {
+            "q": "What should I ask about changes after I sign?",
+            "a": "Ask what happens if the site differs from the assumptions used, such as roof condition, switchboard work, cable runs or travel, so variation charges do not arrive unexpectedly."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "article-sources",
         "text": "Article sources"
@@ -998,10 +1058,21 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government Solar Guide — choosing a solar retailer and installer",
-          "Solar Accreditation Australia — accreditation status check",
-          "New Energy Tech Consumer Code — approved sellers",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "New Energy Tech Consumer Code — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -1038,6 +1109,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -1048,6 +1123,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "More quotes do not automatically create more clarity. A useful benchmark can be more valuable than several proposals built on different assumptions.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-one-installer-introduction.jpg",
+        "alt": "Illustration of three tangled paths merging into one straight path leading to a single house."
+      },
       {
         "type": "p",
         "text": "Most homeowners are told to get three solar quotes."
@@ -1159,12 +1239,6 @@ export const articles: KnowledgeArticle[] = [
           "Monitoring",
           "After-sales support",
           "Contract terms"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Australian Government Solar Guide"
         ]
       },
       {
@@ -1450,35 +1524,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "Common questions"
       },
       {
-        "type": "faq",
-        "items": [
-          {
-            "q": "Why not give me three installers?",
-            "a": "You can obtain additional quotes independently if you want them. Watts Better focuses on giving you one considered introduction after you have reviewed your report, discussed the result and clarified the physical starting point."
-          },
-          {
-            "q": "Is one installer guaranteed to be cheaper?",
-            "a": "No. The purpose is not to promise the lowest price. It is to help you compare one proposal against a clearer understanding of your own energy needs and the questions that matter."
-          },
-          {
-            "q": "Can I reject the installer's quote?",
-            "a": "Yes. An introduction does not commit you to an installation, quote or purchase."
-          },
-          {
-            "q": "Can I use my own installer?",
-            "a": "Yes. Your report is yours to use, whether or not you request an introduction through Watts Better."
-          },
-          {
-            "q": "Does Watts Better receive a fee?",
-            "a": "If you request an installer introduction and subsequently proceed with that installer, the installer may pay Watts Better an introducer fee. Part of that fee funds the independent post-installation inspection and report. The arrangement is explained in full on the How We Are Paid page."
-          },
-          {
-            "q": "Does the installer know an inspection will occur?",
-            "a": "Yes. An installer introduced through Watts Better must be prepared to cooperate with the independent inspection process."
-          }
-        ]
-      },
-      {
         "type": "h2",
         "id": "the-bottom-line",
         "text": "The bottom line"
@@ -1525,6 +1570,35 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why not give me three installers?",
+            "a": "You can obtain additional quotes independently if you want them. Watts Better focuses on giving you one considered introduction after you have reviewed your report, discussed the result and clarified the physical starting point."
+          },
+          {
+            "q": "Is one installer guaranteed to be cheaper?",
+            "a": "No. The purpose is not to promise the lowest price. It is to help you compare one proposal against a clearer understanding of your own energy needs and the questions that matter."
+          },
+          {
+            "q": "Can I reject the installer's quote?",
+            "a": "Yes. An introduction does not commit you to an installation, quote or purchase."
+          },
+          {
+            "q": "Can I use my own installer?",
+            "a": "Yes. Your report is yours to use, whether or not you request an introduction through Watts Better."
+          },
+          {
+            "q": "Does Watts Better receive a fee?",
+            "a": "If you request an installer introduction and subsequently proceed with that installer, the installer may pay Watts Better an introducer fee. Part of that fee funds the independent post-installation inspection and report. The arrangement is explained in full on the How We Are Paid page."
+          },
+          {
+            "q": "Does the installer know an inspection will occur?",
+            "a": "Yes. An installer introduced through Watts Better must be prepared to cooperate with the independent inspection process."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "article-sources",
         "text": "Article sources"
@@ -1532,10 +1606,25 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government Solar Guide — choosing a solar retailer and installer",
-          "Australian Competition and Consumer Commission — solar panels and home batteries",
-          "Solar Accreditation Australia — accreditation status check",
-          "New Energy Tech Consumer Code — approved sellers"
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "Australian Competition and Consumer Commission — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "New Energy Tech Consumer Code — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          }
         ]
       },
       {
@@ -1572,6 +1661,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -1582,6 +1675,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Why Amber and Flow Power can change your battery ROI. Two households can buy the same battery and achieve very different results — and the same household can get different results simply by changing electricity plans.",
     "category": "Your numbers",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-same-battery-different-plan.jpg",
+        "alt": "Illustration of a single battery unit connected to two houses by two differently shaped paths."
+      },
       {
         "type": "p",
         "text": "A battery is not just a box on the wall."
@@ -1792,12 +1890,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "Compatibility depends on the exact battery and inverter combination, not only the battery brand."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: Amber — building the bring-your-own-battery energy future"
-        ]
-      },
-      {
         "type": "label",
         "text": "Modelled result"
       },
@@ -1884,12 +1976,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "The customer remains in control of the battery and is responsible for setting up the export schedule through the battery or inverter app."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: Flow Power — Battery Happy Hour"
-        ]
-      },
-      {
         "type": "label",
         "text": "Modelled result"
       },
@@ -1915,12 +2001,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The exact battery, inverter, app and configuration still need to be checked."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Flow Power — battery export guides"
-        ]
       },
       {
         "type": "h2",
@@ -2321,6 +2401,23 @@ export const articles: KnowledgeArticle[] = [
         "text": "Battery + inverter + plan + control method + warranty + household usage"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can the same battery produce different results in different homes?",
+            "a": "Yes. The plan the household is on prices the same battery differently, so the value depends on the tariff as much as on the hardware."
+          },
+          {
+            "q": "Why does the electricity plan matter so much?",
+            "a": "The plan sets the rate your battery displaces when it discharges and the rate you are paid for exports. Together those drive most of the return."
+          },
+          {
+            "q": "What should I check before choosing a plan for a battery?",
+            "a": "Whether your battery is compatible with the plan's program, what the plan pays for exports, and whether its peak windows line up with your household's evening usage."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -2328,14 +2425,38 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Amber — SmartShift Compatibility Checker",
-          "Amber — building the bring-your-own-battery energy future",
-          "Amber — solar and battery",
-          "Flow Power — batteries with Flow Power",
-          "Flow Power — Battery Happy Hour",
-          "Flow Power — battery export guides",
-          "Clean Energy Council — approved batteries",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "Amber — building the bring-your-own-battery energy future",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Flow Power — Battery Happy Hour",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Flow Power — battery export guides",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Amber — SmartShift Compatibility Checker",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Amber — solar and battery",
+            "href": "https://www.amber.com.au/"
+          },
+          {
+            "label": "Flow Power — batteries with Flow Power",
+            "href": "https://flowpower.com.au/"
+          },
+          {
+            "label": "Clean Energy Council — approved batteries",
+            "href": "https://www.cleanenergycouncil.org.au/"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -2372,6 +2493,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -2382,6 +2507,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "A battery is not automatically the right choice. Your tariff, usage pattern, solar system and evening demand matter more than a national average.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-home-battery-brisbane.jpg",
+        "alt": "Illustration of a house at dusk with a battery mounted on its wall and yellow light in the windows."
+      },
       {
         "type": "p",
         "text": "A home battery can reduce the amount of electricity you buy from the grid."
@@ -2509,7 +2639,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Source: DCCEEW"
+          {
+            "label": "DCCEEW",
+            "href": "https://www.dcceew.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -2545,6 +2690,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "The report explains the numbers. The chat clarifies the home. The introduction is your choice."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Is a home battery worth it for every Brisbane home?",
+            "a": "No. The value depends on your tariff, usage pattern, solar system and evening demand. A national average does not answer the question for your home."
+          },
+          {
+            "q": "Does a bigger battery always save more?",
+            "a": "No. A battery needs enough surplus solar to charge it and enough later demand to use it. An oversized battery can sit partly used and return less than a smaller, well-matched system."
+          },
+          {
+            "q": "How does the Queensland discount affect the decision?",
+            "a": "The federal Cheaper Home Batteries Program reduces the upfront cost and the applicable STC factor changes over time, so timing matters. A rebate does not turn an unsuitable battery into a good investment."
+          },
+          {
+            "q": "What should I review before asking for a price?",
+            "a": "Your average energy use, evening usage, tariff periods, export pattern, current solar position and the battery size your home could realistically use."
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "Run your analysis and book a 15-minute chat.",
         "links": [
@@ -2560,7 +2726,7 @@ export const articles: KnowledgeArticle[] = [
       },
       {
         "type": "note",
-        "text": "General information only. A final battery recommendation requires site-specific assessment, current pricing, tariff information and confirmation from an appropriately accredited installer."
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -2572,6 +2738,183 @@ export const articles: KnowledgeArticle[] = [
     "category": "PV and batteries",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-solar-only-battery-later.jpg",
+        "alt": "Illustration of three houses in a row showing solar panels alone, panels with an empty battery slot, and panels with a fitted battery."
+      },
+      {
+        "type": "p",
+        "text": "Most households treat solar and batteries as a single decision."
+      },
+      {
+        "type": "p",
+        "text": "They are two decisions, and they are made at different times. You can generate electricity now and decide about storing it later. You can do both at once. Both can be right — for different homes."
+      },
+      {
+        "type": "h2",
+        "id": "what-a-battery-actually-adds",
+        "text": "What a battery actually adds"
+      },
+      {
+        "type": "p",
+        "text": "A battery does not make electricity. It moves it."
+      },
+      {
+        "type": "p",
+        "text": "It takes solar that would otherwise be exported during the day and makes it available in the evening, when grid imports are most expensive. That produces value only when two things are true at once: you have surplus solar to store, and you have evening demand to use it."
+      },
+      {
+        "type": "p",
+        "text": "If either is missing, the battery is expensive storage with nothing to store or nothing to spend."
+      },
+      {
+        "type": "h2",
+        "id": "the-three-pathways",
+        "text": "The three pathways"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Solar only — generate during the day, use what you can in the home, export the rest.",
+          "Solar now, battery later — start with generation and add storage when your usage, your tariff or your household makes it worthwhile.",
+          "Both at once — design generation and storage together as one system, sized as a whole."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "when-solar-only-is-the-better-first-move",
+        "text": "When solar only is the better first move"
+      },
+      {
+        "type": "list",
+        "items": [
+          "You do not yet know your household's usage pattern.",
+          "Your evening demand is modest compared with your daytime generation.",
+          "You export a meaningful share of what you generate and your plan pays reasonably for it.",
+          "Your roof is the binding constraint — adding storage does not create more energy to store."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "when-adding-a-battery-later-makes-sense",
+        "text": "When adding a battery later makes sense"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Your household has shifted onto a tariff with a large gap between peak and off-peak rates.",
+          "You have added a large evening load — an electric vehicle, or electric heating.",
+          "Your usage pattern has become predictable enough to size storage against it."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-later-actually-costs-you",
+        "text": "What later actually costs you"
+      },
+      {
+        "type": "p",
+        "text": "The catch in the battery-later pathway is that battery-ready is not the same as expandable."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Expansion rules differ by product. Some batteries have a defined window in which extra modules can be added, and the age and specification of the original modules matter.",
+          "The inverter can be the limit. A hybrid inverter caps how much battery capacity the system can manage, regardless of what the battery itself allows.",
+          "The rebate is set at installation. The federal discount is determined by the STC factor that applies on the date the battery is installed, and that factor declines on a published schedule. The current published schedule moves from 6.8 for May–December 2026 to 5.7 for January–June 2027, then continues to fall in later periods.",
+          "The second visit costs more than the first. Adding capacity later can mean matching discontinued modules, additional labour and a second round of compliance work."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "None of that makes the battery-later pathway wrong. It makes it a decision that has to be checked before you buy, not after."
+      },
+      {
+        "type": "h2",
+        "id": "the-questions-that-decide-it",
+        "text": "The questions that decide it"
+      },
+      {
+        "type": "checklist",
+        "items": [
+          "Do I have surplus daytime solar that I am currently exporting cheaply?",
+          "When does my household actually use power, and what does my plan charge then?",
+          "What does my plan pay for exports, and what does it charge at peak?",
+          "If I add a battery later, will this specific battery and this specific inverter allow it?",
+          "What happens to the rebate if I wait twelve months?",
+          "If my roof is limited, is storage even the constraint I should be solving?"
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-this-means-for-your-decision",
+        "text": "What this means for your decision"
+      },
+      {
+        "type": "p",
+        "text": "If you cannot answer those questions with your own numbers, you are not choosing between equipment. You are choosing between estimates — and every estimate was built on someone else's household."
+      },
+      {
+        "type": "p",
+        "text": "The pathway that looks cheapest on a quote is not always the one that costs least over ten years. The pathway that suits your home is the one your usage, tariff and roof can actually support."
+      },
+      {
+        "type": "h2",
+        "id": "before-you-request-an-introduction",
+        "text": "Before you request an introduction"
+      },
+      {
+        "type": "p",
+        "text": "You do not need to request an installer introduction to receive or discuss your analysis. Understanding which pathway fits your home comes first. The equipment decision comes after."
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Should I install solar and a battery at the same time?",
+            "a": "Not necessarily. Adding a battery later can be sensible, but only if the system and inverter allow the expansion you expect at the time you expect it."
+          },
+          {
+            "q": "What decides whether adding a battery later is realistic?",
+            "a": "The expansion rules and warranty window of the battery you choose, the inverter's capacity for extra modules, and how the rebate applies at the later date."
+          },
+          {
+            "q": "Does the federal battery discount reward waiting?",
+            "a": "No. The discount is set by the STC factor on the installation date, and that factor declines over the published schedule — so waiting generally means less support, not more."
+          },
+          {
+            "q": "What should I compare before choosing a pathway?",
+            "a": "Compare solar only, solar now with a battery later, and both at once against your own usage and tariff. The pathways differ in cost, flexibility and how much they depend on future decisions."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Australian Government — Electricity pricing plans and tariffs (energy.gov.au)",
+            "href": "https://www.energy.gov.au/solar/financial-benefits-solar/electricity-pricing-plans-and-tariffs"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "See which pathway your numbers support.",
         "links": [
@@ -2580,9 +2923,13 @@ export const articles: KnowledgeArticle[] = [
             "href": "/the-report"
           }
         ]
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "comingSoon": true
+    "date": "September 2026"
   },
   {
     "slug": "why-some-home-batteries-cost-more",
@@ -2590,6 +2937,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Two batteries can look similar on a quote while creating very different ownership experiences. What the price does and does not include.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-why-batteries-cost-more.jpg",
+        "alt": "Illustration of two identical batteries side by side, one shown solid and the other cut open to reveal stacked internal layers."
+      },
       {
         "type": "p",
         "text": "A home battery is not just a box of cells."
@@ -2815,12 +3167,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "It does show that the installer and service technician may need to understand a substantial technical system when something goes wrong."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: GoodWe ESA Australian user manual"
-        ]
-      },
-      {
         "type": "h2",
         "id": "maintenance-requirements-matter",
         "text": "Maintenance requirements matter"
@@ -3021,12 +3367,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "It means the homeowner needs to understand the conditions before relying on the headline."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: GoodWe Australia and New Zealand warranty documentation"
-        ]
-      },
-      {
         "type": "h2",
         "id": "no-warranty-in-practice-needs-careful-language",
         "text": "“No warranty in practice” needs careful language"
@@ -3102,12 +3442,6 @@ export const articles: KnowledgeArticle[] = [
           "The issue relates to the battery product",
           "The issue relates to the installation",
           "The issue relates to a service or representation"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: ACCC — solar panels and home batteries"
         ]
       },
       {
@@ -3302,6 +3636,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "A long warranty is not the same as an easy warranty."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why can two similar-looking batteries cost so differently?",
+            "a": "The price covers different things: warranty terms, the claims process, maintenance requirements and after-sales support, not just capacity and brand."
+          },
+          {
+            "q": "Is a more expensive battery always better value?",
+            "a": "No. A higher price can be worth it when it buys stronger warranty coverage or support, but it should be compared on total ownership cost rather than sticker price."
+          },
+          {
+            "q": "What should I ask about a battery warranty?",
+            "a": "What is covered, for how long, who administers the claim and what is excluded. A warranty is not one thing, and the claims process is part of the product."
+          },
+          {
+            "q": "Does Australian Consumer Law still apply?",
+            "a": "Yes. Consumer guarantees apply independently of the manufacturer's warranty, so a limited warranty does not remove your statutory rights."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -3309,10 +3664,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "GoodWe ESA Australian user manual",
-          "GoodWe Australia warranty library",
-          "GoodWe Australia and New Zealand warranty documentation",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "GoodWe ESA Australian user manual",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "GoodWe Australia and New Zealand warranty documentation",
+            "href": "https://www.goodwe.com.au/warranty"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "GoodWe Australia warranty library",
+            "href": "https://www.goodwe.com.au/warranty"
+          }
         ]
       },
       {
@@ -3345,6 +3712,10 @@ export const articles: KnowledgeArticle[] = [
             "href": "/contact-us"
           }
         ]
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -3355,6 +3726,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Lower panel prices have made solar more accessible. But what are you giving up when one panel costs significantly less than another?",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-why-panels-cost-less.jpg",
+        "alt": "Illustration of a solar panel array in which some panels are drawn solid and others only as empty outlines."
+      },
       {
         "type": "p",
         "text": "Solar panels have become dramatically cheaper over the last decade."
@@ -3441,12 +3817,6 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: International Energy Agency — Solar PV Global Supply Chains"
-        ]
-      },
-      {
         "type": "p",
         "text": "China's dominance does not automatically mean that Chinese panels are poor quality."
       },
@@ -3511,12 +3881,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "It does mean the sector is under severe financial pressure."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Wood Mackenzie — Global solar PV module manufacturer ranking"
-        ]
       },
       {
         "type": "h2",
@@ -3626,12 +3990,6 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: RETC — 2026 PV Module Index"
-        ]
-      },
-      {
         "type": "p",
         "text": "The correct question is not:"
       },
@@ -3680,12 +4038,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "There have also been separate licensing arrangements involving companies such as Maxeon and Aiko."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Sources: Hanwha Q CELLS patent complaint; LONGi and JinkoSolar global settlement"
-        ]
       },
       {
         "type": "p",
@@ -3765,12 +4117,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "Solar-sector financial analysts such as Sinovoltaics assess manufacturers because financial distress can affect the credibility of long-term product warranties."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Sinovoltaics — 2026 financial stability ranking"
-        ]
       },
       {
         "type": "p",
@@ -4099,6 +4445,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "Who will still be able and willing to support this panel when something goes wrong years after installation?"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Does country of origin determine panel quality?",
+            "a": "No. Quality is not the same as country of origin. Manufacturing standards, independent testing results and the specific product matter more."
+          },
+          {
+            "q": "What does Tier 1 actually mean?",
+            "a": "It is a bankability measure used across the industry, not a quality rating for the panel itself, so it should not be treated as a guarantee of longevity."
+          },
+          {
+            "q": "What matters if the manufacturer may not be around later?",
+            "a": "A performance warranty is only as useful as the entity behind it. Check who honours the warranty, and for how long, because the warranty may outlive the manufacturer."
+          },
+          {
+            "q": "What should I check before accepting a panel?",
+            "a": "Australian product approval, the performance warranty terms, the manufacturer's financial position and the quality of the installation. The lowest price is not automatically the best value."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -4106,11 +4473,29 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "International Energy Agency — Solar PV Global Supply Chains",
-          "Wood Mackenzie — Global solar PV module manufacturer ranking",
-          "RETC — 2026 PV Module Index",
-          "Sinovoltaics — 2026 financial stability ranking",
-          "Clean Energy Regulator — rooftop solar installers and designers"
+          {
+            "label": "International Energy Agency — Solar PV Global Supply Chains",
+            "href": "https://www.iea.org/reports/solar-pv-global-supply-chains"
+          },
+          {
+            "label": "Wood Mackenzie — Global solar PV module manufacturer ranking",
+            "href": "https://www.woodmac.com/press-releases/longi-green-energy-tops-wood-mackenzies-global-solar-pv-module-manufacturer-ranking-2026"
+          },
+          {
+            "label": "RETC — 2026 PV Module Index",
+            "href": "https://retc-ca.com/pvmi"
+          },
+          {
+            "label": "Hanwha Q CELLS patent complaint; LONGi and JinkoSolar global settlement"
+          },
+          {
+            "label": "Sinovoltaics — 2026 financial stability ranking",
+            "href": "https://sinovoltaics.com/reports/2026-solar-financial-stability-ranking-of-pv-modules-inverters-energy-storage-manufacturers-edition-1"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          }
         ]
       },
       {
@@ -4147,6 +4532,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -4157,6 +4546,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "“Start with a smaller battery and add more later” can be sensible — but only if the expansion rules support your likely timeframe.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-expandable-battery.jpg",
+        "alt": "Illustration of a modular battery stack with an empty slot and a floating module above it."
+      },
       {
         "type": "h2",
         "id": "why-future-expansion-needs-to-be-checked-before-you-buy",
@@ -4402,12 +4796,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "GoodWe's official Australian warranty library contains model-specific documents, so the quote should identify the exact battery model and link to the relevant terms."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: GoodWe Australia — warranty library"
-        ]
-      },
-      {
         "type": "h2",
         "id": "sigenergy-a-more-flexible-modular-approach",
         "text": "Sigenergy: a more flexible modular approach"
@@ -4432,12 +4820,6 @@ export const articles: KnowledgeArticle[] = [
           "Mixed use of new and old battery packs",
           "Parallel expansion",
           "Different capacity and state-of-health combinations"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Sources: Sigenergy — SigenStor; Sigenergy — SigenStor Neo"
         ]
       },
       {
@@ -4612,12 +4994,6 @@ export const articles: KnowledgeArticle[] = [
           "Does expansion affect the original claim?",
           "What happens if the program rules change?",
           "Is the quoted expansion plan dependent on a future rebate?"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: DCCEEW — Cheaper Home Batteries Program"
         ]
       },
       {
@@ -4868,6 +5244,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "The cheapest battery today may be the most expensive battery to expand later."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can I add capacity to a battery later?",
+            "a": "Sometimes, but only within the rules set by the product. Expansion is not just adding more capacity: the age of the modules and the warranty window matter."
+          },
+          {
+            "q": "Why can the inverter limit expansion?",
+            "a": "The inverter caps how much battery capacity the system can manage. A plan to expand may need a larger inverter, or a different product, from the start."
+          },
+          {
+            "q": "Does battery-ready mean I can expand?",
+            "a": "Not by itself. It usually means the wiring or mounting is prepared. The expansion rules, module age and inverter limits still apply."
+          },
+          {
+            "q": "Can expansion cost more than expected?",
+            "a": "Yes. Later modules may not match the originals, any rebate may not apply the same way, and the work itself may be more involved."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -4875,14 +5272,42 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "GoodWe Australia — warranty library",
-          "GoodWe Lynx F G2 Series",
-          "GoodWe Lynx U G3 Series",
-          "Sigenergy — SigenStor",
-          "Sigenergy — SigenStor Neo",
-          "Sigenergy SigenStor user manual",
-          "DCCEEW — Cheaper Home Batteries Program",
-          "ACCC — solar panels and home batteries"
+          {
+            "label": "GoodWe Australia — warranty library",
+            "href": "https://www.goodwe.com.au/warranty"
+          },
+          {
+            "label": "Sigenergy — SigenStor; Sigenergy — SigenStor Neo",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "GoodWe Lynx F G2 Series",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "GoodWe Lynx U G3 Series",
+            "href": "https://www.goodwe.com.au/"
+          },
+          {
+            "label": "Sigenergy — SigenStor",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Sigenergy — SigenStor Neo",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Sigenergy SigenStor user manual",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          }
         ]
       },
       {
@@ -4919,6 +5344,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -4929,6 +5358,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "A battery cannot create more solar energy than your roof allows. If your household needs more stored energy than your roof can produce, bidirectional EV charging may be part of the answer.",
     "category": "PV and batteries",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-roof-limits-battery.jpg",
+        "alt": "Illustration of a small house with a modest roof, an oversized battery outline beside it and a car parked under a carport."
+      },
       {
         "type": "h2",
         "id": "when-your-ev-could-become-the-next-battery",
@@ -5008,12 +5442,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "It also notes that network connection and export limits can restrict system design."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Australian Government — sizing your solar system"
-        ]
       },
       {
         "type": "h2",
@@ -5264,12 +5692,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "The Australian Government warns that not all EVs or charging systems support V2X, and that very few EVs currently have V2X capability confirmed by the vehicle manufacturer."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: Australian Government — vehicle-to-everything opportunities"
-        ]
-      },
-      {
         "type": "h2",
         "id": "the-ev-is-not-automatically-a-home-battery",
         "text": "The EV is not automatically a home battery"
@@ -5408,12 +5830,6 @@ export const articles: KnowledgeArticle[] = [
           "Meet applicable inverter and connection requirements",
           "Work with the property's phase and supply",
           "Comply with Energex requirements"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Energex — bidirectional EV charging"
         ]
       },
       {
@@ -5751,6 +6167,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "If future storage matters, choose the first battery with the future system in mind."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Can a battery make up for limited roof space?",
+            "a": "No. A battery stores energy, it does not create it. If your roof cannot generate enough, a battery cannot close the shortfall."
+          },
+          {
+            "q": "What options help when roof space is limited?",
+            "a": "Reducing demand, sizing storage to what the roof can actually charge, and considering bidirectional charging where the vehicle supports it."
+          },
+          {
+            "q": "Is an EV automatically a home battery?",
+            "a": "No. Bidirectional charging depends on the vehicle, the charger and network approval. An EV is not automatically a home battery."
+          },
+          {
+            "q": "Why does the battery brand matter here?",
+            "a": "The brand can affect your future options, including whether the system can be expanded or integrated with bidirectional charging later."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -5758,13 +6195,34 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Australian Government — sizing your solar system",
-          "Australian Government — vehicle-to-everything opportunities",
-          "Energex — bidirectional EV charging",
-          "Energex — vehicle-to-grid EV connections",
-          "Energy.gov.au — smarter EV charging",
-          "Sigenergy — SigenStor",
-          "Australian Government — Cheaper Home Batteries Program"
+          {
+            "label": "Australian Government — sizing your solar system",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Australian Government — vehicle-to-everything opportunities",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Energex — bidirectional EV charging",
+            "href": "https://www.energex.com.au/"
+          },
+          {
+            "label": "Energex — vehicle-to-grid EV connections",
+            "href": "https://www.energex.com.au/"
+          },
+          {
+            "label": "Energy.gov.au — smarter EV charging",
+            "href": "https://www.energy.gov.au/"
+          },
+          {
+            "label": "Sigenergy — SigenStor",
+            "href": "https://www.sigenergy.com/"
+          },
+          {
+            "label": "Australian Government — Cheaper Home Batteries Program",
+            "href": "https://www.energy.gov.au/news/discounted-batteries-households-through-cheaper-home-batteries-program"
+          }
         ]
       },
       {
@@ -5805,6 +6263,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -5815,6 +6277,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "The Cheaper Home Batteries Program changes its STC factor every six months. Here is what Brisbane homeowners need to understand before relying on a rebate estimate.",
     "category": "Queensland",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-qld-battery-discount.jpg",
+        "alt": "Illustration of descending blocks in a staircase pattern in front of a suburban roofline under a pink sun."
+      },
       {
         "type": "p",
         "text": "The federal Cheaper Home Batteries Program is helping reduce the upfront cost of eligible battery installations across Australia."
@@ -5878,12 +6345,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The Australian Government describes the support as a discount of around 30% on the upfront cost for a range of eligible systems."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Australian Government — Cheaper Home Batteries Program"
-        ]
       },
       {
         "type": "h2",
@@ -5990,12 +6451,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The discount that applies to your installation is determined by the relevant program settings when the battery is installed — not simply when you first request a quote."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: DCCEEW — STC factor schedule"
-        ]
       },
       {
         "type": "h2",
@@ -6155,12 +6610,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "The Clean Energy Regulator states that designers and installers must be accredited by Solar Accreditation Australia for the relevant system type, and installers must also meet applicable electrical licensing requirements."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: Clean Energy Regulator — rooftop solar installers and designers"
-        ]
-      },
-      {
         "type": "h2",
         "id": "ask-what-happens-if-the-installation-is-delayed",
         "text": "Ask what happens if the installation is delayed"
@@ -6200,19 +6649,24 @@ export const articles: KnowledgeArticle[] = [
         "text": "Queensland programs are not all the same"
       },
       {
+        "type": "callout",
+        "label": "Supercharged Solar for Renters",
+        "text": "The Supercharged Solar for Renters program provides eligible Queensland landlords with rebates of up to $3,500 for installing solar on qualifying rental properties. It is a solar-rental program, not a general household battery rebate.",
+        "tone": "copper"
+      },
+      {
+        "type": "callout",
+        "label": "Solar Bonus Scheme",
+        "text": "The former Queensland 44-cent Solar Bonus Scheme is not available to new customers. Existing eligible customers may retain the tariff until its scheduled expiry on 1 July 2028, subject to the scheme rules.",
+        "tone": "copper"
+      },
+      {
         "type": "p",
         "text": "The federal battery discount should not be confused with other Queensland energy programs."
       },
       {
         "type": "p",
         "text": "For example:"
-      },
-      {
-        "type": "sources",
-        "items": [
-          "The Supercharged Solar for Renters program provides eligible Queensland landlords with rebates of up to $3,500 for installing solar on qualifying rental properties. It is a solar-rental program, not a general household battery rebate. Source: Queensland Government — Supercharged Solar for Renters",
-          "The former Queensland 44-cent Solar Bonus Scheme is not available to new customers. Existing eligible customers may retain the tariff until its scheduled expiry on 1 July 2028, subject to the scheme rules. Source: Queensland Government — Solar Bonus Scheme"
-        ]
       },
       {
         "type": "p",
@@ -6353,6 +6807,27 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What is the Cheaper Home Batteries Program?",
+            "a": "It is a federal program that provides support for home batteries through the Small-scale Renewable Energy Scheme."
+          },
+          {
+            "q": "Do I apply for the discount myself?",
+            "a": "Usually not. The discount is generally handled through the approved supply and installation process rather than as a separate claim by the homeowner."
+          },
+          {
+            "q": "Why does the amount of support change?",
+            "a": "The STC factor is reviewed on a published schedule, so the same battery can attract a different level of support depending on when it is installed."
+          },
+          {
+            "q": "Does the discount decide my system size?",
+            "a": "No. It reduces the cost, but sizing should follow your usage and solar generation rather than the size the discount happens to favour."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "article-sources",
         "text": "Article sources"
@@ -6360,11 +6835,34 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "DCCEEW — Cheaper Home Batteries Program",
-          "Clean Energy Regulator — Solar batteries",
-          "Clean Energy Regulator — Rooftop solar installers and designers",
-          "Queensland Government — Supercharged Solar for Renters",
-          "Queensland Government — Solar Bonus Scheme"
+          {
+            "label": "Australian Government — Cheaper Home Batteries Program",
+            "href": "https://www.energy.gov.au/news/discounted-batteries-households-through-cheaper-home-batteries-program"
+          },
+          {
+            "label": "DCCEEW — STC factor schedule",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          },
+          {
+            "label": "DCCEEW — Cheaper Home Batteries Program",
+            "href": "https://www.dcceew.gov.au/energy/programs/cheaper-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Queensland Government — Supercharged Solar for Renters",
+            "href": "https://www.qld.gov.au/"
+          },
+          {
+            "label": "Queensland Government — Solar Bonus Scheme",
+            "href": "https://www.qld.gov.au/"
+          }
         ]
       },
       {
@@ -6401,6 +6899,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -6411,6 +6913,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "Solar PV and battery work are not the same accreditation category. Here is what homeowners should check before accepting a quote.",
     "category": "Queensland",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-installer-accreditation.jpg",
+        "alt": "Neon-outline illustration of a credential card with a check mark being inspected by a magnifying glass."
+      },
       {
         "type": "p",
         "text": "A company can advertise solar and batteries without making it obvious who will actually design, install and sign off the work."
@@ -6453,12 +6960,6 @@ export const articles: KnowledgeArticle[] = [
         "text": "A general solar accreditation should not be assumed to cover every type of battery installation."
       },
       {
-        "type": "sources",
-        "items": [
-          "Source: Solar Accreditation Australia — accreditation"
-        ]
-      },
-      {
         "type": "h2",
         "id": "check-the-individual-installer",
         "text": "Check the individual installer"
@@ -6490,12 +6991,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The Australian Government recommends checking the installer's accreditation number and status before seeking a quote."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Australian Government Solar Guide"
-        ]
       },
       {
         "type": "h2",
@@ -6709,6 +7204,27 @@ export const articles: KnowledgeArticle[] = [
         ]
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Is solar accreditation the same as battery accreditation?",
+            "a": "Not always. Solar PV and battery work can fall into separate accreditation categories, so check the category that matches the work being done."
+          },
+          {
+            "q": "Should I check the company or the individual?",
+            "a": "Both, but the individual matters. Accreditation attaches to the person who designs or installs, not only to the company they work for."
+          },
+          {
+            "q": "What does NETCC approval tell me?",
+            "a": "It indicates the seller has signed up to the New Energy Tech Consumer Code, which sets conduct and after-sales expectations. It is not a technical accreditation."
+          },
+          {
+            "q": "Does accreditation guarantee good work?",
+            "a": "No. It confirms the required credentials are in place, but quality still depends on the work itself and the documentation you receive."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -6716,11 +7232,24 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Solar Accreditation Australia — accreditation",
-          "Solar Accreditation Australia — accreditation status check",
-          "Australian Government Solar Guide",
-          "NETCC — approved sellers",
-          "Clean Energy Regulator — solar battery inspection results"
+          {
+            "label": "Solar Accreditation Australia — accreditation"
+          },
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "NETCC — approved sellers",
+            "href": "https://www.newenergytech.org.au/about-the-netcc"
+          },
+          {
+            "label": "Clean Energy Regulator — solar battery inspection results",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/small-scale-renewable-energy-scheme/small-scale-renewable-energy-systems/small-scale-renewable-energy-system-inspections/solar-battery-inspection-results-report"
+          }
         ]
       },
       {
@@ -6757,6 +7286,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -6767,6 +7300,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "A company can advertise solar and batteries without making it obvious who will design, install and sign off the work. Here's how to check.",
     "category": "Queensland",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-who-is-responsible.jpg",
+        "alt": "Neon-outline illustration of an office, a van and a roof linked by a glowing line with a magnifying glass following it."
+      },
       {
         "type": "p",
         "text": "A company can advertise solar and batteries without making it obvious who will actually design, install and sign off the work."
@@ -6803,12 +7341,6 @@ export const articles: KnowledgeArticle[] = [
           "Electrical contractor licences",
           "Unrestricted contractor licences",
           "Restricted contractor licences"
-        ]
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Business Queensland — electrical licences"
         ]
       },
       {
@@ -7035,12 +7567,6 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "The Clean Energy Regulator states that designers and installers must be accredited by Solar Accreditation Australia for the relevant system type and that installers must meet applicable electrical licensing requirements."
-      },
-      {
-        "type": "sources",
-        "items": [
-          "Source: Clean Energy Regulator — rooftop solar installers and designers"
-        ]
       },
       {
         "type": "h2",
@@ -7531,6 +8057,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "Who will still be accountable after the sale?"
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "How do I find out who will actually install my system?",
+            "a": "Ask directly, then verify the Queensland electrical contractor licence, the ABN and the individual's accreditation before you sign."
+          },
+          {
+            "q": "What is the subcontracting model, and why does it matter?",
+            "a": "A sales company may not be the installer. Understanding which entity designs, installs and signs off the work tells you who is accountable."
+          },
+          {
+            "q": "Why check business continuity?",
+            "a": "A company needs to still be there to honour warranties and after-sales support, which is why a quick check of registration and status is worth doing."
+          },
+          {
+            "q": "What can these checks not prove?",
+            "a": "They confirm credentials, not workmanship. They do not guarantee that the installation itself will meet every requirement."
+          }
+        ]
+      },
+      {
         "type": "h2",
         "id": "sources",
         "text": "Sources"
@@ -7538,13 +8085,33 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Business Queensland — electrical licences",
-          "Business Queensland — electrical contractor safety duties",
-          "Solar Accreditation Australia — accreditation status check",
-          "Clean Energy Regulator — rooftop solar installers and designers",
-          "ABN Lookup",
-          "ASIC Published Notices",
-          "Australian Government Solar Guide"
+          {
+            "label": "Business Queensland — electrical licences",
+            "href": "https://www.business.qld.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          },
+          {
+            "label": "Business Queensland — electrical contractor safety duties",
+            "href": "https://www.business.qld.gov.au/"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          },
+          {
+            "label": "ABN Lookup",
+            "href": "https://abr.business.gov.au/"
+          },
+          {
+            "label": "ASIC Published Notices",
+            "href": "https://publishednotices.asic.gov.au/"
+          },
+          {
+            "label": "Australian Government Solar Guide",
+            "href": "https://www.energy.gov.au/solar"
+          }
         ]
       },
       {
@@ -7585,6 +8152,10 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "p",
         "text": "You do not need to request an installer introduction to receive or discuss your analysis."
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -7595,6 +8166,11 @@ export const articles: KnowledgeArticle[] = [
     "standfirst": "The Clean Energy Regulator reports that 62.28% of inspected battery installations were rated substandard. That figure needs context.",
     "category": "Inspection and quality",
     "blocks": [
+      {
+        "type": "image",
+        "src": "/images/concept-substandard-inspection.jpg",
+        "alt": "Neon-outline illustration of a battery installation with a magnifying glass over it and warning triangles marking points on the installation."
+      },
       {
         "type": "p",
         "text": "The Clean Energy Regulator's solar-battery inspection results reported that, as at 30 June 2026:"
@@ -7737,6 +8313,27 @@ export const articles: KnowledgeArticle[] = [
         "text": "A completed system should be more than switched on. You should know what was assessed and where the evidence is."
       },
       {
+        "type": "faq",
+        "items": [
+          {
+            "q": "What does substandard mean in the regulator's terminology?",
+            "a": "Technical non-compliance that requires rectification but is safe to remain in operation. It does not mean the system is unsafe or that the battery is defective."
+          },
+          {
+            "q": "What problems were most commonly found?",
+            "a": "Labelling issues were the most common, along with matters such as protection and connections. The regulator reported no issues with the batteries themselves."
+          },
+          {
+            "q": "Does a substandard rating apply to every installation?",
+            "a": "No. The figures relate to installations selected for the regulator's inspection program, not a survey of every battery installation in Australia."
+          },
+          {
+            "q": "Why does an independent inspection help?",
+            "a": "It gives you a record of what was assessed, supported by evidence, instead of relying on the assumption that a completed system is correct."
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "Learn how Watts Better's independent inspection works.",
         "links": [
@@ -7753,8 +8350,22 @@ export const articles: KnowledgeArticle[] = [
       {
         "type": "sources",
         "items": [
-          "Source: Clean Energy Regulator"
+          {
+            "label": "Clean Energy Regulator",
+            "href": "https://cer.gov.au/"
+          },
+          {
+            "label": "Clean Energy Regulator — Solar batteries",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target"
+          },
+          {
+            "label": "Solar Accreditation Australia — accreditation status check"
+          }
         ]
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
     "date": "September 2026"
@@ -7766,6 +8377,170 @@ export const articles: KnowledgeArticle[] = [
     "category": "Inspection and quality",
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/concept-photograph-before-installer.jpg",
+        "alt": "Neon-outline illustration of a hand holding a phone photographing a closed switchboard on a wall."
+      },
+      {
+        "type": "p",
+        "text": "Your electricity bill explains your energy use. Photographs explain the physical starting point."
+      },
+      {
+        "type": "p",
+        "text": "Neither replaces a site assessment, and neither is meant to. Together they turn a vague first conversation into a specific one."
+      },
+      {
+        "type": "h2",
+        "id": "why-photographs-help",
+        "text": "Why photographs help"
+      },
+      {
+        "type": "p",
+        "text": "Most first conversations stall on the same handful of questions — what does the switchboard look like, where could equipment actually go, how is the roof accessed."
+      },
+      {
+        "type": "p",
+        "text": "A few photographs answer those questions before anyone drives out. That means the conversation starts at the things that actually need deciding."
+      },
+      {
+        "type": "h2",
+        "id": "the-switchboard",
+        "text": "The switchboard"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A straight-on photograph of the board with its cover closed.",
+          "A closer shot of any labels or ratings printed on the outside.",
+          "Enough distance in the frame to show the wall around it and how much space there is."
+        ]
+      },
+      {
+        "type": "callout",
+        "label": "Safety first",
+        "text": "Do not open the switchboard cover, remove any panel or touch wiring to take a photograph. Photograph what is already exposed, from outside, and leave the enclosure closed.",
+        "tone": "copper"
+      },
+      {
+        "type": "h2",
+        "id": "the-roof-and-its-access",
+        "text": "The roof and its access"
+      },
+      {
+        "type": "list",
+        "items": [
+          "A wide shot of the roof, taken from the ground — skip this one if any part of it is unsafe to reach.",
+          "The route an installer would use to get up there.",
+          "Anything already on the roof: existing panels, an antenna, a vent, a skylight."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "where-equipment-might-go",
+        "text": "Where equipment might go"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The wall or area where an inverter or battery could be mounted.",
+          "That same spot photographed at a different time of day, if it is shaded part of the day.",
+          "The distance between that spot and the switchboard."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "the-details-people-forget",
+        "text": "The details people forget"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The electricity meter and its enclosure.",
+          "Anything that limits access — locking gates, a narrow side path, a steep driveway.",
+          "Existing damage you already know about: cracked tiles, rust, water staining. Photographing it first avoids an argument later about when it happened."
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "what-photographs-cannot-tell-an-installer",
+        "text": "What photographs cannot tell an installer"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The condition of the roof structure beneath the surface.",
+          "Cable routes and whether there is spare capacity in the switchboard.",
+          "Whether equipment will actually fit once clearance requirements are applied.",
+          "Anything a physical site assessment is designed to confirm."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This is why the photographs replace an initial conversation, not an inspection. Treat them as the starting point of an assessment, not a substitute for one."
+      },
+      {
+        "type": "h2",
+        "id": "your-photo-checklist",
+        "text": "Your photo checklist"
+      },
+      {
+        "type": "checklist",
+        "items": [
+          "Switchboard, cover closed, straight on.",
+          "Switchboard labels, close up.",
+          "Wall or area where equipment might be mounted.",
+          "The same spot in shade, if it is shaded part of the day.",
+          "Roof, wide shot from the ground.",
+          "Roof access route.",
+          "Meter and its enclosure.",
+          "Anything you already know is damaged.",
+          "Anything that limits site access."
+        ]
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "q": "Why do photographs help before speaking with an installer?",
+            "a": "Your bill explains your energy use. Photographs clarify the physical starting point, so the conversation begins from an accurate picture of your home rather than a description of it."
+          },
+          {
+            "q": "What should I photograph?",
+            "a": "The things an installer would ask about: the switchboard, the roof and its access, the intended equipment location, and anything that might restrict the installation."
+          },
+          {
+            "q": "Should I open the switchboard to photograph inside it?",
+            "a": "No. Never open the enclosure or touch wiring to take a photograph. Photograph the closed board and its external labelling only."
+          },
+          {
+            "q": "Do photographs replace a site assessment?",
+            "a": "No. They help the conversation start from an accurate picture, but a site assessment is still required before any design is confirmed."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "sources",
+        "text": "Sources"
+      },
+      {
+        "type": "sources",
+        "items": [
+          {
+            "label": "Australian Government Solar Guide — choosing a solar retailer and installer",
+            "href": "https://www.energy.gov.au/solar/solar-retailers-and-installation/choose-your-solar-retailer-and-installer"
+          },
+          {
+            "label": "ACCC — solar panels and home batteries",
+            "href": "https://www.accc.gov.au/consumers/specific-products-and-activities/solar-panel-systems-and-home-batteries"
+          },
+          {
+            "label": "Clean Energy Regulator — rooftop solar installers and designers",
+            "href": "https://cer.gov.au/schemes/renewable-energy-target/renewable-energy-target-participants-and-industry/rooftop-solar-installers-and-designers"
+          }
+        ]
+      },
+      {
         "type": "cta",
         "text": "Complete the Photo Capture after your clarity chat.",
         "links": [
@@ -7774,8 +8549,12 @@ export const articles: KnowledgeArticle[] = [
             "href": "/contact-us"
           }
         ]
+      },
+      {
+        "type": "note",
+        "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "comingSoon": true
+    "date": "September 2026"
   }
 ]
