@@ -32,11 +32,29 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const related = articles
     .filter((a) => a.slug !== article.slug && a.category === article.category && !a.comingSoon)
     .slice(0, 3)
+  const faqs = article.blocks.find((block) => block.type === 'faq')
+  const faqJsonLd = faqs?.type === 'faq'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.items.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      }
+    : null
 
   return (
     <div>
       <SiteHeader />
       <main>
+        {faqJsonLd && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+          />
+        )}
         <PageHero
           eyebrow={`Knowledge · ${article.category}`}
           fileNumber={`KN-${String(index + 1).padStart(2, '0')}`}
@@ -44,7 +62,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           intro={article.standfirst}
         >
           <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-black/60">
-            Watts Better · {article.date ?? 'Coming soon'}
+            Watts Better · {article.date ?? 'Coming soon'} · General information only
           </p>
         </PageHero>
 

@@ -6,6 +6,8 @@ export interface KnowledgeArticle {
   standfirst: string
   category: string
   date?: string
+  author?: string
+  reviewed?: string
   comingSoon?: boolean
   blocks: ArticleBlock[]
 }
@@ -575,7 +577,7 @@ export const articles: KnowledgeArticle[] = [
         "text": "General information only. This article provides household-level guidance to support informed decision-making. It does not replace a site inspection, electrical design, financial advice, or advice from a qualified and appropriately accredited installer. Actual system suitability, cost, savings and installation requirements depend on site-specific circumstances."
       }
     ],
-    "date": "August 2026"
+    "date": "September 2026"
   },
   {
     "slug": "how-to-compare-solar-and-battery-quotes-in-brisbane",
@@ -2650,6 +2652,7 @@ export const articles: KnowledgeArticle[] = [
   },
   {
     "slug": "solar-only-battery-later-or-both",
+    "date": "September 2026",
     "title": "Solar only, battery later, or both?",
     "standfirst": "A battery can be valuable, but not every home should add one immediately. Compare the pathways before choosing the equipment.",
     "category": "PV and batteries",
@@ -7995,6 +7998,7 @@ export const articles: KnowledgeArticle[] = [
   },
   {
     "slug": "what-to-photograph-before-speaking-with-a-solar-installer",
+    "date": "September 2026",
     "title": "What to photograph before speaking with a solar installer",
     "standfirst": "Your electricity bill explains your energy use. A few useful photographs help clarify the physical starting point.",
     "category": "Inspection and quality",
